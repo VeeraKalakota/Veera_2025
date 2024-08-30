@@ -27,7 +27,6 @@ Focus on tehnical communications through project presentations and student led t
 Grades are on projects, learnt concepts, and live reviews between student(s) and teacher
 ![Moon-Jellyfish](https://github.com/user-attachments/assets/475b7d39-3169-4874-a324-91221f8bd264)
 
-<!-- Liquid:  statements -->
 
 <!-- Include submenu from _includes to top of pages -->
 {% include nav/home.html %}
@@ -45,7 +44,6 @@ Grades are on projects, learnt concepts, and live reviews between student(s) and
 <!--- Embedded Cascading Style Sheet (CSS) rules, 
         define how HTML elements look 
 --->
-<style>
 
   /*CSS style rules for the id and class of the sprite...
   */
@@ -208,6 +206,3 @@ Grades are on projects, learnt concepts, and live reviews between student(s) and
     sprite.style.transform = `scale(${0.2 * scale})`;
     mario.startResting();
   });
-
-</script>
-
