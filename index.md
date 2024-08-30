@@ -25,6 +25,4 @@ Creativity, research, design, data structures, and utilizing ChatGPT
 Performing team work, team communication and collaboration, peer reviews/grading
 Focus on tehnical communications through project presentations and student led teaching
 Grades are on projects, learnt concepts, and live reviews between student(s) and teacher
-Jelly Fish Fun
-download
-image
+![Moon-Jellyfish](https://github.com/user-attachments/assets/475b7d39-3169-4874-a324-91221f8bd264)
