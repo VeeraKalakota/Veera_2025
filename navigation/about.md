@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About
+title: About Me (Veera Kalakota)
 permalink: /about/
 ---
 
@@ -36,18 +36,15 @@ Creator of Student 2025
 
     // 2. Define a JavaScript object for our http source and our data rows for the Living in the World grid
     var http_source = "https://upload.wikimedia.org/wikipedia/commons/";
-    var living_in_the_world = [
-        {"flag": "0/01/Flag_of_California.svg", "greeting": "Hey", "description": "California - forever"},
-        {"flag": "b/b9/Flag_of_Oregon.svg", "greeting": "Hi", "description": "Oregon - 9 years"},
-        {"flag": "b/be/Flag_of_England.svg", "greeting": "Alright mate", "description": "England - 2 years"},
-        {"flag": "e/ef/Flag_of_Hawaii.svg", "greeting": "Aloha", "description": "Hawaii - 2 years"},
+    var origin_country = [
+        {"flag": "0/01/Flag_of_California.svg", "greeting": "Hey", "description": "My parents are from India, but immigrated here. I was born in California, as well as my 11 year old brother."}
     ]; 
     
     // 3a. Consider how to update style count for size of container
     // The grid-template-columns has been defined as dynamic with auto-fill and minmax
 
     // 3b. Build grid items inside of our container for each row of data
-    for (const location of living_in_the_world) {
+    for (const location of origin_country) {
         // Create a "div" with "class grid-item" for each row
         var gridItem = document.createElement("div");
         gridItem.className = "grid-item";  // This class name connects the gridItem to the CSS style elements
