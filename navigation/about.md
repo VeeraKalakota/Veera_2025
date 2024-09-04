@@ -37,7 +37,7 @@ Creator of Student 2025
     // 2. Define a JavaScript object for our http source and our data rows for the Living in the World grid
     var http_source = "https://upload.wikimedia.org/wikipedia/commons/";
     var origin_country = [
-        {"flag": "0/01/Flag_of_California.svg", "greeting": "Hey", "description": "My parents are from India, but immigrated here. I was born in California, as well as my 11 year old brother."}
+        {"flag": "8/88/Flag_of_India_%282-1%29.svg", "greeting": "Hey", "description": "My parents are from India, but immigrated here. I was born in California, as well as my 11 year old brother."}
     ]; 
     
     // 3a. Consider how to update style count for size of container
