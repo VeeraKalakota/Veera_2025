@@ -1,7 +1,8 @@
 ---
 layout: base
-title: Student Home 
-description: Home Page
+title: Course Descriptions
+description: An overview of Computer Science pathway at Del Norte High School
+author: Veera
 image: /images/mario_animation.png
 hide: true
 ---
