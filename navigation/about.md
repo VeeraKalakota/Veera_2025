@@ -40,8 +40,14 @@ Creator of Student 2025
         {"flag": "8/88/Flag_of_India_%282-1%29.svg",
          "description": "My parents are from India, but immigrated here. I was born in California, as well as my 11 year old brother."
         }, 
-        {"flag": "8/88/Flag_of_India_%282-1%29.svg",
-         "description": "My parents are from India, but immigrated here. I was born in California, as well as my 11 year old brother."
+        {"flag": "0/0c/Heads_of_badminton_raquets.jpg",
+         "description": "One of my favorite hobbies is playing badminton."
+        },
+        {"flag": "4/4b/Cute_yorkier_puppies_ready_for_new_home_._2_boys_left_and_two_girls_.It_will_be_up_to_the_new_puppies.jpg",
+         "description": "If I were to have a pet, I would have a medium-sized puppy. I am a huge fan of dogs. Woof!"
+        },
+        {"flag": "d/d5/Thai_Prawn_Noodles_%2822154724644%29.jpg",
+         "description": "I like Thai and Chinese cuisine, but my mom's cooking beats them all, hands down."
         }
     ]; 
     // 3a. Consider how to update style count for size of container
