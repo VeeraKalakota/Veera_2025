@@ -37,11 +37,8 @@ Creator of Student 2025
     // 2. Define a JavaScript object for our http source and our data rows for the Living in the World grid
     var http_source = "https://upload.wikimedia.org/wikipedia/commons/";
     var origin_country = [
-        {"flag": "8/88/Flag_of_India_%282-1%29.svg", "description": "My parents are from India, but immigrated here. I was born in California, as well as my 11 year old brother."}
+        {"flag": "8/88/Flag_of_India_%282-1%29.svg", "description": "My parents are from India, but immigrated here. I was born in California, as well as my 11 year old brother." "flag2": "0/0c/Heads_of_badminton_raquets.jpg", "description": "One of my main hobbies is playing badminton"}
     ]; 
-    var hobbies = [
-        {"image": "0/0c/Sport_balls.svg", "description": "I like to play many sports, enjoying physical activity overall. However, my main focus is in playing badminton"}
-    ];
     // 3a. Consider how to update style count for size of container
     // The grid-template-columns has been defined as dynamic with auto-fill and minmax
 
@@ -53,7 +50,11 @@ Creator of Student 2025
         // Add "img" HTML tag for the flag
         var img = document.createElement("img");
         img.src = http_source + location.flag; // concatenate the source and flag
-        img.alt = location.flag + " Flag"; // add alt text for accessibility
+        img.alt = location.flag + "Flag"; // add alt text for accessibility
+
+        var hobbies = document.createElement("img")
+        img.src = http_source + location.badminton_raquets
+        img.alt = location.badminton_raquets + 
 
         // Add "p" HTML tag for the description
         var description = document.createElement("p");
