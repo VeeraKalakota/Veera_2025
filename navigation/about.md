@@ -39,7 +39,9 @@ Creator of Student 2025
     var origin_country = [
         {"flag": "8/88/Flag_of_India_%282-1%29.svg", "description": "My parents are from India, but immigrated here. I was born in California, as well as my 11 year old brother."}
     ]; 
-    
+    var hobbies = [
+        {"image": "0/0c/Sport_balls.svg", "description": "I like to play many sports, enjoying physical activity overall. However, my main focus is in playing badminton"}
+    ];
     // 3a. Consider how to update style count for size of container
     // The grid-template-columns has been defined as dynamic with auto-fill and minmax
 
