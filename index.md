@@ -7,7 +7,7 @@ image: /images/mario_animation.png
 hide: true
 ---
 
-Hello World!
+Hello World! 
 
 New Kasm Test
 
