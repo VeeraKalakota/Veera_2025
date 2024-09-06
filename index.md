@@ -6,6 +6,9 @@ author: Veera
 image: /images/mario_animation.png
 hide: true
 ---
+
+Hello World!
+
 New Kasm Test
 
 <!-- Liquid:  statements -->
