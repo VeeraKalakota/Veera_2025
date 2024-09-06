@@ -44,6 +44,7 @@ Creator of Student 2025
          "description": "If I were to have a pet, I would have a medium-sized puppy. I am a huge fan of dogs. Woof!"},
         {"flag": "d/d5/Thai_Prawn_Noodles_%2822154724644%29.jpg",
          "description": "I like Thai and Chinese cuisine, but my mom's cooking beats them all, hands down."}
+        {"description": "Hello, my name is Veera, and I am in the class of 2028"}
     ]; 
     // 3a. Consider how to update style count for size of container
     // The grid-template-columns has been defined as dynamic with auto-fill and minmax
