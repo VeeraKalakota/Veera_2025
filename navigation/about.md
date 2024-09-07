@@ -45,7 +45,6 @@ Creator of Student 2025
         {"flag": "d/d5/Thai_Prawn_Noodles_%2822154724644%29.jpg",
          "description": "I like Thai and Chinese cuisine, but my mom's cooking beats them all, hands down."}
     ];  
-<h1>My Journey Through Life</h1>
     // 3a. Consider how to update style count for size of container
     // The grid-template-columns has been defined as dynamic with auto-fill and minmax
 
