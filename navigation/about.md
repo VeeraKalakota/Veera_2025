@@ -76,10 +76,18 @@ Creator of Student 2025
     }
 </script>
 
-# My Journey Through Life
+## My Journey Through Life
 - Went to Monterey Ridge Elementary School
 - Transition to middle school was difficult for me
-    - So many new changes ...
+    - So many new changes...
 - Going into high school, I was scared
     - New faces, new teachers, different schedules
-    - Overall, it wasn't that bad. Teachers helped me, made new friends, and quickly adapted to schedule changes.  
+    - Overall, it wasn't that bad. Teachers helped me, made new friends, and quickly adapted to schedule changes.
+
+## Culture, Family, and More
+- Family originated from India, but parents immigrated here for college
+- Me and my brother were both born here and raised in California
+- I like to play badminton, stay healthy, and have fun with peers and family members
+
+I took this class because I wanted to explore new fields. For me, I was told that I was a natural leader, and very good at picking up things that I liked. These included fields like sports, math, and science. Other subjects were challeging, but managed to pick them up and embrace them. Stepping in to high school, I did not have a single clue on how to code. Because of Mr. Mortensen and my friends, I am able to enjoy a topic that I had never even considered. 
+
