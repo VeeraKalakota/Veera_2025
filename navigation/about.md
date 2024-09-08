@@ -76,7 +76,7 @@ Creator of Student 2025
     }
 </script>
 
-### My Journey Through Life
+# My Journey Through Life
 - Went to Monterey Ridge Elementary School
 - Transition to middle school was difficult for me
     - So many new changes ...
