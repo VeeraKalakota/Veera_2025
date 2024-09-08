@@ -47,7 +47,9 @@ Creator of Student 2025
     ];  
     // 3a. Consider how to update style count for size of container
     // The grid-template-columns has been defined as dynamic with auto-fill and minmax
-
+    <ul>
+        <li> went to Monterey Ridge Elementary School as a little kid.</li>
+    </ul>
     // 3b. Build grid items inside of our container for each row of data
     for (const location of origin_country) {
         // Create a "div" with "class grid-item" for each row
