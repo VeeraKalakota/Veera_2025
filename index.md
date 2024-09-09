@@ -7,10 +7,6 @@ image: /images/mario_animation.png
 hide: true
 ---
 
-Hello World! 
-
-New Kasm Test
-
 <!-- Liquid:  statements -->
 
 <!-- Include submenu from _includes to top of pages -->
@@ -195,6 +191,9 @@ New Kasm Test
 
 </script>
 
+Hello World! 
+
+New Kasm Test
 
 ## Investing in Your Technical Future
 
