@@ -93,6 +93,4 @@ I took this class because I wanted to explore new fields. For me, I was told tha
 
 <div class="image-gallery">
   <img src="{{site.baseurl}}/images/about/IMG_0003.jpg">
-  <img src="{{site.baseurl}}/images/about/IMG_0593.jpg">
-  <img src="{{site.baseurl}}/images/about/download.jpg">
 </div>
