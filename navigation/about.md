@@ -93,6 +93,6 @@ I took this class because I wanted to explore new fields. For me, I was told tha
 
 <div class="image-gallery">
   <img src="{{site.baseurl}}/images/about/IMG_0003.jpg" alt="Image 1">
-  <img src="{{site.baseurl}}/images/about/" alt="Image 2">
-  <img src="{{site.baseurl}}/images/about/" alt="Image 3">
+  <img src="{{site.baseurl}}/images/about/IMG_0593.jpg" alt="Image 2">
+  <img src="{{site.baseurl}}/images/about/download.jpg" alt="Image 3">
 </div>
