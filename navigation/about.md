@@ -110,8 +110,8 @@ I took this class because I wanted to explore new fields. For me, I was told tha
 Gallery of Pics, scroll to the right for more ...
 </comment>
 <div class="image-gallery">
-  <img src="/Veera_2025_2/images/about/FAMILY1.jpg" alt="Image 1"/>
-  <img src="/Veera_2025_2/images/about/Dad and me.jpg" alt="Image 2"/>
-  <img src="/Veera_2025_2/images/about/download.jpg" alt="Image 3"/>
+  <img src="{{site.baseurl}}/images/about/FAMILY1.jpg" alt="Image 1"/>
+  <img src="{{site.baseurl}}/images/about/Dad and me.jpg" alt="Image 2"/>
+  <img src="{{site.baseurl}}/images/about/download.jpg" alt="Image 3"/>
   <img src="{{site.baseurl}}/images/about/FAMILY.jpg" alt="Image 4">
 </div>
