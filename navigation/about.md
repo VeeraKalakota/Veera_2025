@@ -88,9 +88,6 @@ Creator of Student 2025
 
         // Append the grid item DIV to the container DIV
         container.appendChild(gridItem);
-        
-        img.src="/images/about/FAMILY.JPG"
-        img.src="{{site.baseurl}}/images/about/FAMILY.jpg"
     }
 </script>
 
