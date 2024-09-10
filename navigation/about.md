@@ -88,6 +88,9 @@ Creator of Student 2025
 
         // Append the grid item DIV to the container DIV
         container.appendChild(gridItem);
+        
+        img.src="/images/about/FAMILY.JPG"
+        img.src="{{site.baseurl}}/images/about/FAMILY.jpg"
     }
 </script>
 
@@ -110,7 +113,6 @@ I took this class because I wanted to explore new fields. For me, I was told tha
 Gallery of Pics, scroll to the right for more ...
 </comment>
 <div class="image-gallery">
-  <img src="images/about/FAMILY.JPG" alt="Image 1"/>
+  <img src="{{site.baseurl}}/images/about/FAMILY.jpg" alt="Image 1">
   <img src="{{site.baseurl}}/images/about/FAMILY.jpg" alt="Image 2">
-  <img src="{{site.baseurl}}/images/about/download.jpg" alt="Image 3">
 </div>
