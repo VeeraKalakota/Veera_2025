@@ -6,7 +6,9 @@ permalink: /about/
 
 Creator of Student 2025
 <style>
-    /* Style looks pretty compact, trace grid-container and grid-item in the code */
+    /* Style looks pretty compact, 
+       - grid-container and grid-item are referenced the code 
+    */
     .grid-container {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Dynamic columns */
@@ -22,6 +24,19 @@ Creator of Student 2025
     }
     .grid-item p {
         margin: 5px 0; /* Add some margin for spacing */
+    }
+
+    .image-gallery {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        gap: 10px;
+        }
+
+    .image-gallery img {
+        max-height: 150px;
+        object-fit: cover;
+        border-radius: 5px;
     }
 </style>
 
@@ -91,8 +106,11 @@ Creator of Student 2025
 
 I took this class because I wanted to explore new fields. For me, I was told that I was a natural leader, and very good at picking up things that I liked. These included fields like sports, math, and science. Other subjects were challeging, but managed to pick them up and embrace them. Stepping in to high school, I did not have a single clue on how to code. Because of Mr. Mortensen and my friends, I am able to enjoy a topic that I had never even considered. 
 
+<comment>
+Gallery of Pics, scroll to the right for more ...
+</comment>
 <div class="image-gallery">
-  <img src="{{site.baseurl}}/images/about/IMG_0593.jpg" alt="Image 1">
-  <img src="{{site.baseurl}}/images/about/IMG_0003.jpg" alt="Image 2">
+  <img src="{{site.baseurl}}/images/about/IMG_0003.jpg" alt="Image 1">
+  <img src="{{site.baseurl}}/images/about/IMG_0593.jpg" alt="Image 2">
   <img src="{{site.baseurl}}/images/about/download.jpg" alt="Image 3">
 </div>
