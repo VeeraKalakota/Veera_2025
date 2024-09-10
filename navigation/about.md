@@ -111,6 +111,6 @@ Gallery of Pics, scroll to the right for more ...
 </comment>
 <div class="image-gallery">
   <img src="/Veera_2025_2/images/about/FAMILY.jpg" alt="Image 1"/>
-  <img src="{{site.url}}/FAMILY.jpg" alt="Image 2">
+  <img src="{site.baseurl}/FAMILY.jpg" alt="Image 2">
   <img src="{{site.baseurl}}/images/about/download.jpg" alt="Image 3">
 </div>
