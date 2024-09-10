@@ -3,7 +3,7 @@ description: "Class of 2025"
 owner_name: Veera Kalakota
 github_username: VeeraKalakota
 github_repo: "Veera_2025_2" 
-baseurl: "Veera_2025_2"
+baseurl: "/Veera_2025_2"
 future: true
 remote_theme: jekyll/minima
 minima:
