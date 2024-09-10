@@ -91,3 +91,8 @@ Creator of Student 2025
 
 I took this class because I wanted to explore new fields. For me, I was told that I was a natural leader, and very good at picking up things that I liked. These included fields like sports, math, and science. Other subjects were challeging, but managed to pick them up and embrace them. Stepping in to high school, I did not have a single clue on how to code. Because of Mr. Mortensen and my friends, I am able to enjoy a topic that I had never even considered. 
 
+<div class="image-gallery">
+  <img src="{{site.baseurl}}/images/about/" alt="Image 1">
+  <img src="{{site.baseurl}}/images/about/" alt="Image 2">
+  <img src="{{site.baseurl}}/images/about/" alt="Image 3">
+</div>
