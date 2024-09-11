@@ -5,7 +5,7 @@ permalink: /CSSE
 ---
 
 # Things I Like About Coding
-### What I enjoy in coding is the ability to be able to collaborate with peers. I have received so much help from my peers, and most of it is simple mistakes. Honestly, the debugging process is my favorite, because in the end, you get the satisfying result of success. I also enjoy my teacher, Mr. Mort. His teaching style is very effective, which is to learn through experience and trial&error. But, most importantly, I have to thank my teammates. 
+*What I enjoy in coding is the ability to be able to collaborate with peers. I have received so much help from my peers, and most of it is simple mistakes. Honestly, the debugging process is my favorite, because in the end, you get the satisfying result of success. I also enjoy my teacher, Mr. Mort. His teaching style is very effective, which is to learn through experience and trial&error. But, most importantly, I have to thank my teammates.*
 
 <br></br>
 
@@ -17,7 +17,7 @@ permalink: /CSSE
 <br></br>
 
 # The Anatomy Of Coding:
-## In github, there are many files to explore. Here are some basic terms to help you get started:
+*In github, there are many files to explore. Here are some basic terms to help you get started:*
 - ### README.md: Contains project instructions and background, standard in GitHub projects.
 - ### index.md: Source for the project's home page; converted from Markdown to HTML by Jekyll.
 - ### _notebooks: Holds Jupyter Notebook (.ipynb) files, converted to Markdown and then HTML.
@@ -39,12 +39,12 @@ permalink: /CSSE
 <br></br>
 
 # Hacks: 
-## In short, coding hacks are fast, often imperfect ways to fix or solve problems in programming, typically used when you need something done quickly. Here are some hacks regarding your github webpage. 
+*In short, coding hacks are fast, often imperfect ways to fix or solve problems in programming, typically used when you need something done quickly. Here are some hacks regarding your github webpage.*
 
 <br></br>
 
 # Utterances:
-### Utterances are comment pop-ups that allow you to comment on a webpage. This are really useful for providing corrections and questions. In order to access these popups, you must provided github authentication. Also, they are found at the bottom of the page. 
+*Utterances are comment pop-ups that allow you to comment on a webpage. This are really useful for providing corrections and questions. In order to access these popups, you must provided github authentication. Also, they are found at the bottom of the page.*
 
 
 <!-- from https://github.com/utterance/utterances -->
