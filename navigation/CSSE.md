@@ -4,16 +4,43 @@ title: CSSE
 permalink: /CSSE
 ---
 
-# Things I Like About Coding
-- ### really fun, able to collaborate with friends
-- ### debugging
-  - ### fixing issues takes time, but it is worth it
+## Things I Like About Coding
+### What I enjoy in coding is the ability to be able to collaborate with peers. I have received so much help from my peers, and most of it is simple mistakes. Honestly, the debugging process is my favorite, because in the end, you get the satisfying result of success. I also enjoy my teacher, Mr. Mort. His teaching style is very effective, which is to learn through experience and trial&error. But, most importantly, I have to thank my teammates. 
 
 
-## My team in CSSE:
+
+
+## My Team In CSSE:
 ### Aneesh: Master at coding, helps all of us in debugging our issues. He is a great leader, and also excellent at basketball. Overall, he has a positive attitude and never stops helping others in need. 
 ### Santhosh: Really smart, knows lots of coding. Really good in using Linux and HTML. He loves creating new games and designs for his website. 
 ### Akhil: Fun-loving, smart peer. He loves to ask questions, some that are really creative and helpful. He is also the team's comedian. He loves inflicting a happy and positive attitude into people. 
+
+
+
+
+## The Anatomy Of Coding:
+### In github, there are many files to explore. Here are some basic terms to help you get started:
+- README.md: Contains project instructions and background, standard in GitHub projects.
+- index.md: Source for the project's home page; converted from Markdown to HTML by Jekyll.
+- _notebooks: Holds Jupyter Notebook (.ipynb) files, converted to Markdown and then HTML.
+- _posts: Contains Markdown files with frontmatter and code, used in the website; includes Liquid code.
+- _data: Stores data files supporting _posts and _notebooks.
+- images: Stores image files (JPEG, PNG, etc.) for _posts and _notebooks.
+- _config.yml: Contains YAML settings for building the Jekyll website.
+- .gitignore: Lists files to be excluded from version control, visible as dimmed in VSCode Explorer.
+- layouts: Contains HTML files for structuring the website; layouts are specified in frontmatter of posts/notebooks.
+- scripts: Includes automation scripts like convert_notebooks.py for converting Jupyter Notebooks to Markdown.
+- site.baseurl: Defines the path to files; must match GitHub Repo settings.
+- Customization: Personalize your project by learning from the 'teacher' repository and adjusting to your interests.
+- Home Page: Create or edit index.md; converted to index.html by GitHub Pages.
+- Page Title: Add a title using frontmatter in _layouts/page.html.
+- Layouts: Base layout is included in all pages; study layouts for automation in notebooks and posts.
+- Submenus: Defined in _includes/nav; index.md and _includes/nav/home.html handle submenu code.
+- Style: Managed in _sass; includes custom styles for themes. Modify _sass/minima/custom-styles.scss for theme     changes/custom styles.
+
+
+
+
 
 
 
