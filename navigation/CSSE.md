@@ -10,15 +10,6 @@ permalink: /CSSE
 
 
 
-
-
-
-
-
-
-
-
-
 # My Team In CSSE:
 ## Aneesh: Master at coding, helps all of us in debugging our issues. He is a great leader, and also excellent at basketball. Overall, he has a positive attitude and never stops helping others in need. 
 ## Santhosh: Really smart, knows lots of coding. Really good in using Linux and HTML. He loves creating new games and designs for his website. 
@@ -46,6 +37,12 @@ permalink: /CSSE
 - ### Layouts: Base layout is included in all pages; study layouts for automation in notebooks and posts.
 - ### Submenus: Defined in _includes/nav; index.md and _includes/nav/home.html handle submenu code.
 - ### Style: Managed in _sass; includes custom styles for themes. Modify _sass/minima/custom-styles.scss for theme     changes/custom styles.
+
+
+
+
+# Hacks: 
+
 
 
 
