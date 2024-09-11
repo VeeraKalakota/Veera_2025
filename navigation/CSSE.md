@@ -45,8 +45,15 @@ permalink: /CSSE
 ### Utterances are comment pop-ups that allow you to comment on a webpage. This are really useful for providing corrections and questions. In order to access these popups, you must provided github authentication. Also, they are found at the bottom of the page. 
 
 
-
-
+<!-- from https://github.com/utterance/utterances -->
+<script src="https://utteranc.es/client.js"
+        repo="{{ site.github_username }}/{{ site.github_repo | default: site.baseurl | remove: "/" }}"
+        issue-term="title"
+        label="blogpost-comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
 
 
 
