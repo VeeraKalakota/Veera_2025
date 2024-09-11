@@ -246,4 +246,12 @@ Classroom work time is 3-4 hours per week. Homework expectations are approximate
 - Meets UC/CSU G requirements
 - Data Structures 1,2 receives Articulated College Credit to Mira Costa CC for "CS 113: Basic Data Structures and Algorithms".  Mira Costa CC requires and provides free registration to receive UC college credit.
 
-![csa]({{site.baseurl}}/images/course-brag/csa24.png)
+<!-- from https://github.com/utterance/utterances -->
+<script src="https://utteranc.es/client.js"
+        repo="{{ site.github_username }}/{{ site.github_repo | default: site.baseurl | remove: "/" }}"
+        issue-term="title"
+        label="blogpost-comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
