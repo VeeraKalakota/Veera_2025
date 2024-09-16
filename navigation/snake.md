@@ -372,6 +372,17 @@ permalink: /snake
         }
     })();
 
+    // Function to toggle fullscreen mode
+function toggleFullScreen() {
+    const canvas = document.getElementById("snake"); // Target the canvas for fullscreen
+    if (!document.fullscreenElement) {
+        canvas.requestFullscreen().catch(err => {
+            console.log(`Error attempting to enable fullscreen mode: ${err.message}`);
+        });
+    } else {
+        document.exitFullscreen();
+    }
+}
 
 // Example: Trigger fullscreen mode on pressing the 'F' key
 document.addEventListener('keydown', function(event) {
