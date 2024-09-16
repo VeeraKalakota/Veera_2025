@@ -396,5 +396,4 @@ const fullscreenButton = document.getElementById('fullscreen-btn');
 if (fullscreenButton) {
     fullscreenButton.addEventListener('click', toggleFullScreen);
 }
-
 </script>
