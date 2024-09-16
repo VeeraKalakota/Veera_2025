@@ -115,6 +115,7 @@ permalink: /snake
     </div>
 </div>
 
+
 <script>
     (function(){
         /* Attributes of Game */
