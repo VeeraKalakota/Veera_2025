@@ -6,7 +6,14 @@ author: Veera
 image: /images/mario_animation.png
 hide: true
 ---
-
+<style>
+.button {
+float: right;
+} 
+</style>
+<a class ="style" href ="https://veerakalakota.github.io/Veera_2025/about/">
+<button> Click this to learn about me</button>
+</a>
 <!-- Liquid:  statements -->
 
 <!-- Include submenu from _includes to top of pages -->
