@@ -1,7 +1,7 @@
 ---
 layout: base
-title: CSSE
-permalink: /CSSE
+title: Ideas
+permalink: /ideas/
 ---
 
 ## Things I Like About Coding
