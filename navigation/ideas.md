@@ -7,6 +7,7 @@ permalink: /ideas
 
 {% include nav/home.html %}
 
+%%javascript
 var compsci_joke_list = [
     { joke: "Why do programmers prefer dark mode? Because light attracts bugs.", complexity: "O(1)" },
     { joke: "Why do Java developers wear glasses? Because they don't see sharp.", complexity: "O(1)" },
