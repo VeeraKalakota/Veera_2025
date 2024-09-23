@@ -33,9 +33,9 @@ permalink: /rpg/
 
     // Assets for game
     //const assets = {}
-    //const assets = {image: image}
-    //const assets = {sprite: sprite}
-    const assets = {image: image, sprite: sprite}
+    const assets = {image: image}
+    const assets = {sprite: sprite}
+    //const assets = {image: image, sprite: sprite}
 
     // Start game engine
     GameControl.start(assets);
