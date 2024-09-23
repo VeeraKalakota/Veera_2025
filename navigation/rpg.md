@@ -2,6 +2,7 @@
 layout: base
 title: RPG
 permalink: /rpg/
+image: /images/rpg/turtle.png
 ---
 
 <canvas id='gameCanvas'></canvas>
