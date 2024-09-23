@@ -2,7 +2,6 @@
 layout: base
 title: RPG
 permalink: /rpg/
-image: /images/rpg/turtle.png
 ---
 
 <canvas id='gameCanvas'></canvas>
@@ -20,9 +19,9 @@ image: /images/rpg/turtle.png
     // Sprite data
     const sprite_src = "{{site.baseurl}}/images/rpg/turtle.png";
     const sprite_data = {
-        SCALE_FACTOR: 10,
+        SCALE_FACTOR: 20,
         STEP_FACTOR: 1000,
-        ANIMATION_RATE: 50,
+        ANIMATION_RATE: 100,
         pixels: {height: 280, width: 256},
         orientation: {rows: 4, columns: 3 },
         up: {row: 0, start: 0, columns: 3 },
