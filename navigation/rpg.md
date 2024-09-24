@@ -19,8 +19,8 @@ permalink: /rpg/
     // Sprite data
     const sprite_src = "{{site.baseurl}}/images/rpg/turtle.png";
     const sprite_data = {
-        SCALE_FACTOR: 20,
-        STEP_FACTOR: 1000,
+        SCALE_FACTOR: 10,
+        STEP_FACTOR: 500,
         ANIMATION_RATE: 100,
         pixels: {height: 280, width: 256},
         orientation: {rows: 4, columns: 3 },
@@ -33,8 +33,8 @@ permalink: /rpg/
 
     // Assets for game
     //const assets = {}
-    const assets = {image: image}
-    const assets = {sprite: sprite}
+    // const assets = {image: image}
+    // const assets = {sprite: sprite}
     //const assets = {image: image, sprite: sprite}
 
     Start game engine
