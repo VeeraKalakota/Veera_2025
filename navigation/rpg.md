@@ -1,6 +1,6 @@
 ---
 layout: base
-title: RPG
+title: rpg
 permalink: /rpg/
 
 <canvas id='gameCanvas'></canvas>
