@@ -16,3 +16,4 @@ permalink: /blogs/
 - Background & Turtle: This is for the background and the turtle itself. 
 - GameEnv: This determines the sizes of the canvas properties.  
 ## New Background
+Here is a screenshot of my new background with the sprite: 
