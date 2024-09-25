@@ -17,5 +17,3 @@ permalink: /blogs/
 ## New Background
 Here is a screenshot of my new background with the sprite: 
 ![image](https://github.com/user-attachments/assets/a942492a-c838-4af6-b1ff-269dc7e1228d)
-
-## Hello!
