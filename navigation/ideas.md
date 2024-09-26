@@ -62,5 +62,6 @@ permalink: /ideas/
 - **make it similar to Township, a game where you collect items, sell them, and level up in the game**
 - **uses JavaScript**
 - **allow sprite to travel to different places, place objects, and collect items**
+- **give sprite pop-ups at certain times to make a decision**
 ### I know that this class is difficult for me, since I am new to all of these concepts. However, I will try my best to go above and beyond expectations. 
 
