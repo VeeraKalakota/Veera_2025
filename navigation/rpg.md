@@ -21,7 +21,7 @@ permalink: /rpg/
     const sprite_data = {
         SCALE_FACTOR: 10,
         STEP_FACTOR: 1000,
-        ANIMATION_RATE: 50,
+        ANIMATION_RATE: 100,
         pixels: {height: 280, width: 256},
         orientation: {rows: 4, columns: 3 },
         down: {row: 0, start: 0, columns: 3 },
