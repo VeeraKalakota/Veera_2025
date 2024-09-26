@@ -10,7 +10,8 @@ permalink: /rpg/
     import GameControl from '{{site.baseurl}}/assets/js/rpg/GameControl.js';
 
     // Background data
-    const image_src = "{{site.baseurl}}/images/rpg/coral_reef.jpg";
+    const image_src = "{{site.baseurl}}/images/rpg/tropical-rainforest-scene-various-wild-260nw-1996605920.webp
+";
     const image_data = {
         pixels: {height: 580, width: 1038}
     };
