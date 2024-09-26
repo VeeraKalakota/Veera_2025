@@ -10,14 +10,14 @@ permalink: /rpg/
     import GameControl from '{{site.baseurl}}/assets/js/rpg/GameControl.js';
 
     // Background data
-    const image_src = "{{site.baseurl}}/images/rpg/Game_Background_38.jpg";
+    const image_src = "{{site.baseurl}}/images/rpg/coral_reef.jpg";
     const image_data = {
         pixels: {height: 580, width: 1038}
     };
     const image = {src: image_src, data: image_data};
 
     // Sprite data
-    const sprite_src = "{{site.baseurl}}/images/rpg/download.png";
+    const sprite_src = "{{site.baseurl}}/images/rpg/turtle.png";
     const sprite_data = {
         SCALE_FACTOR: 10,
         STEP_FACTOR: 1000,
