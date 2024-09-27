@@ -28,7 +28,7 @@ const GameControl = {
         this.player = new Player(assets.sprite || null);
        
         // Create starfish pickups
-        this.pickups.push(new Pickup(100, 100, assets.starfish.src)); // Add a pickup at (100, 100)
+        this.pickups.push(new Pickup(100, 100, assets.seaweed.src)); // Add a pickup at (100, 100)
         this.gameLoop();
     },
 
