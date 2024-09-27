@@ -1,6 +1,7 @@
 import GameEnv from './GameEnv.js';
 import Background from './Background.js';
 import Player from './Player.js';
+import Pickup from './Pickup.js'; // Import the new class
 
 /**
  * The GameControl object manages the game.
@@ -24,6 +25,7 @@ const GameControl = {
         GameEnv.create(); // Create the Game World, this is pre-requisite for all game objects.
         this.background = new Background(assets.image || null);
         this.player = new Player(assets.sprite || null);
+        this.pickup = new Pickup(); // Create a new Pickup object
         this.gameLoop();
     },
 
@@ -31,6 +33,7 @@ const GameControl = {
         GameEnv.clear(); // Clear the canvas
         this.background.draw();
         this.player.update();
+        this.pickup.draw(); // Draw the Pickup object
         requestAnimationFrame(this.gameLoop.bind(this));
     },
 
