@@ -34,7 +34,7 @@ permalink: /rpg/
     // Seaweed sprite data
     const seaweed_src = "{{site.baseurl}}/images/rpg/seaweed.png";
     const seaweed_data = {
-    pixels: { height: 330, width: 295 }, // Adjust based on your seaweed image size
+    pixels: { height: 66, width: 59 }, // Adjust based on your seaweed image size
     };
     const seaweed = { src: seaweed_src, data: seaweed_data };
 
