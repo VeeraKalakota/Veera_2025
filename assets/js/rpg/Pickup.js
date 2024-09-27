@@ -178,11 +178,3 @@ class pickup {
         if (this.position.x < 0) {
             this.position.x = 0;        }
     }
-
-    /**
-     * Updates the pickup's position and ensures it stays within the canvas boundaries.
-     * 
-     * This method updates the pickup's position based on its velocity and ensures that the pickup
-     * stays within the boundaries of the canvas.
-     */
-pickup() {
