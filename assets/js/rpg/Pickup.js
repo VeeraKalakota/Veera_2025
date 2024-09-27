@@ -23,4 +23,3 @@ export class Pickup {
 }
 
 export default Pickup;
-
