@@ -6,46 +6,46 @@ const STEP_FACTOR = 100; // 1/nth, or N steps up and across the canvas
 const ANIMATION_RATE = 1; // 1/nth of the frame rate
 
 /**
- * Player is a dynamic class that manages the data and events for a player object.
+ * pickup is a dynamic class that manages the data and events for a pickup object.
  * 
- * The focus of this class is to handle the player's state, rendering, and key events.
+ * The focus of this class is to handle the pickup's state, rendering, and key events.
  * 
  * This class uses a classic Java class pattern which is nice for managing object data and events.
  * 
  * The classic Java class pattern provides a structured way to define the properties and methods
- * associated with the player. This approach helps encapsulate the player's state and behavior,
+ * associated with the pickup. This approach helps encapsulate the pickup's state and behavior,
  * making the code more modular and easier to maintain. By using this pattern, we can create
- * multiple instances of the Player class, each with its own state and behavior.
+ * multiple instances of the pickup class, each with its own state and behavior.
  * 
- * @class Player
- * @property {Object} position - The current position of the player.
- * @property {Object} velocity - The current velocity of the player.
- * @property {Object} scale - The scale of the player based on the game environment.
- * @property {number} size - The size of the player.
- * @property {number} width - The width of the player.
- * @property {number} height - The height of the player.
- * @property {number} xVelocity - The velocity of the player along the x-axis.
- * @property {number} yVelocity - The velocity of the player along the y-axis.
- * @property {Image} spriteSheet - The sprite sheet image for the player.
+ * @class pickup
+ * @property {Object} position - The current position of the pickup.
+ * @property {Object} velocity - The current velocity of the pickup.
+ * @property {Object} scale - The scale of the pickup based on the game environment.
+ * @property {number} size - The size of the pickup.
+ * @property {number} width - The width of the pickup.
+ * @property {number} height - The height of the pickup.
+ * @property {number} xVelocity - The velocity of the pickup along the x-axis.
+ * @property {number} yVelocity - The velocity of the pickup along the y-axis.
+ * @property {Image} spriteSheet - The sprite sheet image for the pickup.
  * @property {number} frameIndex - The current frame index for animation.
  * @property {number} frameCount - The total number of frames for each direction.
  * @property {Object} spriteData - The data for the sprite sheet.
  * @property {number} frameCounter - Counter to control the animation rate.
- * @method resize - Resizes the player based on the game environment.
- * @method draw - Draws the player on the canvas.
- * @method update - Updates the player's position and ensures it stays within the canvas boundaries.
- * @method bindEventListeners - Binds key event listeners to handle player movement.
- * @method handleKeyDown - Handles key down events to change the player's velocity.
- * @method handleKeyUp - Handles key up events to stop the player's velocity.
+ * @method resize - Resizes the pickup based on the game environment.
+ * @method draw - Draws the pickup on the canvas.
+ * @method update - Updates the pickup's position and ensures it stays within the canvas boundaries.
+ * @method bindEventListeners - Binds key event listeners to handle pickup movement.
+ * @method handleKeyDown - Handles key down events to change the pickup's velocity.
+ * @method handleKeyUp - Handles key up events to stop the pickup's velocity.
  */
-class Player {
+class pickup {
     /**
-     * The constructor method is called when a new Player object is created.
+     * The constructor method is called when a new pickup object is created.
      * 
-     * @param {Object|null} sprite - The sprite data for the player. If null, a default red square is used.
+     * @param {Object|null} sprite - The sprite data for the pickup. If null, a default red square is used.
      */
     constructor(sprite = null) {
-        // Initialize the player's scale based on the game environment
+        // Initialize the pickup's scale based on the game environment
         this.scale = { width: GameEnv.innerWidth, height: GameEnv.innerHeight };
 
         // Check if sprite data is provided
@@ -72,14 +72,14 @@ class Player {
             this.spriteSheet = null;
         }
 
-        // Set the initial size of the player
+        // Set the initial size of the pickup
         this.size = GameEnv.innerHeight / this.scaleFactor;
 
-        // Initialize the player's position and velocity
+        // Initialize the pickup's position and velocity
         this.position = { x: 0, y: GameEnv.innerHeight - this.size };
         this.velocity = { x: 0, y: 0 };
 
-        // Set the initial size and velocity of the player
+        // Set the initial size and velocity of the pickup
         this.resize();
 
         // Bind event listeners to allow object movement
@@ -87,38 +87,35 @@ class Player {
     }
 
     /**
-     * Resizes the player based on the game environment.
+     * Resizes the pickup based on the game environment.
      * 
-     * This method adjusts the player's size and velocity based on the scale of the game environment.
-     * It also adjusts the player's position proportionally based on the previous and current scale.
+     * This method adjusts the pickup's size and velocity based on the scale of the game environment.
+     * It also adjusts the pickup's position proportionally based on the previous and current scale.
      */
     resize() {
         // Calculate the new scale resulting from the window resize
         const newScale = { width: GameEnv.innerWidth, height: GameEnv.innerHeight };
 
-        // Adjust the player's position proportionally
+        // Adjust the pickup's position proportionally
         this.position.x = (this.position.x / this.scale.width) * newScale.width;
         this.position.y = (this.position.y / this.scale.height) * newScale.height;
 
-        // Update the player's scale to the new scale
+        // Update the pickup's scale to the new scale
         this.scale = newScale;
 
-        // Recalculate the player's size based on the new scale
+        // Recalculate the pickup's size based on the new scale
         this.size = this.scale.height / this.scaleFactor; 
 
-        // Recalculate the player's velocity steps based on the new scale
-        this.xVelocity = this.scale.width / this.stepFactor;
-        this.yVelocity = this.scale.height / this.stepFactor;
 
-        // Set the player's width and height to the new size (object is a square)
+        // Set the pickup's width and height to the new size (object is a square)
         this.width = this.size;
         this.height = this.size;
     }
 
     /**
-     * Draws the player on the canvas.
+     * Draws the pickup on the canvas.
      * 
-     * This method renders the player using the sprite sheet if provided, otherwise a red square.
+     * This method renders the pickup using the sprite sheet if provided, otherwise a red square.
      */
     draw() {
         if (this.spriteSheet) {
@@ -155,50 +152,37 @@ class Player {
     }
 
     /**
-     * Updates the player's position and ensures it stays within the canvas boundaries.
+     * Updates the pickup's position and ensures it stays within the canvas boundaries.
      * 
-     * This method updates the player's position based on its velocity and ensures that the player
+     * This method updates the pickup's position based on its velocity and ensures that the pickup
      * stays within the boundaries of the canvas.
      */
     update() {
-        // Update begins by drawing the player object
+        // Update begins by drawing the pickup object
         this.draw();
 
-        // Update or change position according to velocity events
-        this.position.x += this.velocity.x;
-        this.position.y += this.velocity.y;
-
-        // Ensure the player stays within the canvas boundaries
+        // Ensure the pickup stays within the canvas boundaries
         // Bottom of the canvas
         if (this.position.y + this.height > GameEnv.innerHeight) {
             this.position.y = GameEnv.innerHeight - this.height;
-            this.velocity.y = 0;
         }
         // Top of the canvas
         if (this.position.y < 0) {
             this.position.y = 0;
-            this.velocity.y = 0;
         }
         // Right of the canvas
         if (this.position.x + this.width > GameEnv.innerWidth) {
             this.position.x = GameEnv.innerWidth - this.width;
-            this.velocity.x = 0;
         }
         // Left of the canvas
         if (this.position.x < 0) {
-            this.position.x = 0;
-            this.velocity.x = 0;
-        }
+            this.position.x = 0;        }
     }
 
     /**
-     * Binds key event listeners to handle player movement.
+     * Updates the pickup's position and ensures it stays within the canvas boundaries.
      * 
-     * This method binds keydown and keyup event listeners to handle player movement.
-     * The .bind(this) method ensures that 'this' refers to the player object.
+     * This method updates the pickup's position based on its velocity and ensures that the pickup
+     * stays within the boundaries of the canvas.
      */
-    bindEventListeners() {
-        addEventListener('keydown', this.handleKeyDown.bind(this));
-        addEventListener('keyup', this.handleKeyUp.bind(this));
-    }
-    
+pickup() {
