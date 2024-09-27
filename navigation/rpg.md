@@ -31,11 +31,19 @@ permalink: /rpg/
     };
     const sprite = {src: sprite_src, data: sprite_data};
 
+    // Starfish sprite data
+    const starfish_src = "{{site.baseurl}}/images/rpg/starfish.png";
+    const starfish_data = {
+    pixels: { height: 330, width: 295 }, // Adjust based on your starfish image size
+    };
+    const starfish = { src: starfish_src, data: starfish_data };
+
     // Assets for game
     //const assets = {}
     //const assets = {image: image}
     //const assets = {sprite: sprite}
-    const assets = {image: image, sprite: sprite}
+    const assets = {image: image, sprite: sprite ,starfish: starfish, // Add the starfish here
+     }
 
     // Start game engine
     GameControl.start(assets);

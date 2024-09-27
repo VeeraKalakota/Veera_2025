@@ -28,9 +28,8 @@ const GameControl = {
         this.player = new Player(assets.sprite || null);
        
         // Create starfish pickups
-        const starfishImageSrc = "{{site.baseurl}}/images/rpg/starfish.png"; // Path to your starfish image
-        this.pickups.push(new Pickup(100, 100, starfishImageSrc)); // Add a pickup at (100, 100)
-        this.pickups.push(new Pickup(300, 200, starfishImageSrc)); // Add another pickup at (300, 200)
+        this.pickups.push(new Pickup(100, 100, assets.starfish)); // Add a pickup at (100, 100)
+        this.pickups.push(new Pickup(300, 200, assets.starfish)); // Add another pickup at (300, 200)
 
         this.gameLoop();
     },
