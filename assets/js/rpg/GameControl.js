@@ -20,12 +20,18 @@ import Pickup from './Pickup.js'; // Import the new class
  * @property {function} resize - Resize the canvas and player object when the window is resized.
  */
 const GameControl = {
+    pickups: [], // Array to hold pickups
 
     start: function(assets = {}) {
         GameEnv.create(); // Create the Game World, this is pre-requisite for all game objects.
         this.background = new Background(assets.image || null);
         this.player = new Player(assets.sprite || null);
-        this.pickup = new Pickup(); // Create a new Pickup object
+       
+        // Create starfish pickups
+        const starfishImageSrc = "{{site.baseurl}}/images/rpg/starfish.png"; // Path to your starfish image
+        this.pickups.push(new Pickup(100, 100, starfishImageSrc)); // Add a pickup at (100, 100)
+        this.pickups.push(new Pickup(300, 200, starfishImageSrc)); // Add another pickup at (300, 200)
+
         this.gameLoop();
     },
 
@@ -33,7 +39,8 @@ const GameControl = {
         GameEnv.clear(); // Clear the canvas
         this.background.draw();
         this.player.update();
-        this.pickup.draw(); // Draw the Pickup object
+         // Draw all pickups
+        this.pickups.forEach(pickup => pickup.draw(GameEnv.ctx));
         requestAnimationFrame(this.gameLoop.bind(this));
     },
 

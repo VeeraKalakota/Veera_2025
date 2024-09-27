@@ -1,22 +1,17 @@
 // Pickup.js
 import GameEnv from './GameEnv.js';
-
-class Pickup {
-    constructor(color = 'gold', radius = 15) {
-        this.color = color; // Color of the pickup
-        this.radius = radius; // Radius of the pickup
-        this.position = {
-            x: Math.random() * (GameEnv.innerWidth - this.radius * 2) + this.radius,
-            y: Math.random() * (GameEnv.innerHeight - this.radius * 2) + this.radius,
-        };
+export class Pickup {
+    constructor(x, y, imageSrc) {
+        this.x = x; // X position of the pickup
+        this.y = y; // Y position of the pickup
+        this.image = new Image(); // Create a new image object
+        this.image.src = imageSrc; // Set the source of the image
+        this.width = 30; // Width of the pickup (adjust as needed)
+        this.height = 30; // Height of the pickup (adjust as needed)
     }
 
-    draw() {
-        const ctx = GameEnv.ctx;
-        ctx.fillStyle = this.color;
-        ctx.beginPath();
-        ctx.arc(this.position.x, this.position.y, this.radius, 0, Math.PI * 2);
-        ctx.fill();
+    draw(ctx) {
+        ctx.drawImage(this.image, this.x, this.y, this.width, this.height); // Draw the image on the canvas
     }
 }
 
