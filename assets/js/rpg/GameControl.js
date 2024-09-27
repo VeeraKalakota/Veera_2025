@@ -1,7 +1,7 @@
 import GameEnv from './GameEnv.js';
 import Background from './Background.js';
 import Player from './Player.js';
-import Pickup from './Pickup.js';
+
 /**
  * The GameControl object manages the game.
  * 
@@ -24,7 +24,6 @@ const GameControl = {
         GameEnv.create(); // Create the Game World, this is pre-requisite for all game objects.
         this.background = new Background(assets.image || null);
         this.player = new Player(assets.sprite || null);
-        this.pickup = new Pickup(assets.sprite || null);
         this.gameLoop();
     },
 
@@ -32,14 +31,12 @@ const GameControl = {
         GameEnv.clear(); // Clear the canvas
         this.background.draw();
         this.player.update();
-        this.pickup.update();
         requestAnimationFrame(this.gameLoop.bind(this));
     },
 
     resize: function() {
         GameEnv.resize(); // Adapts the canvas to the new window size, ie a new Game World.
         this.player.resize();
-        this.pickup.resize();
     }
 };
 
