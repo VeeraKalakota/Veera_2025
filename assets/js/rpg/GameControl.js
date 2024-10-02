@@ -58,7 +58,7 @@ const GameControl = {
         const ctx = GameEnv.ctx
         ctx.fillStyle = 'black'
         ctx.font = '60px Arial'
-        ctx.fillText(`Score: ${this.score}`,10,70)
+        ctx.fillText(`Score: ${this.score}`,50,50)
 
     },
 
