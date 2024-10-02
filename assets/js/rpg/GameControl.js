@@ -21,6 +21,8 @@ import Pickup from './Pickup.js'; // Import the new class
  */
 const GameControl = {
     pickup: null, 
+    score: 0, // Initialize score to zero
+
 
     start: function(assets = {}) {
         GameEnv.create(); // Create the Game World, this is pre-requisite for all game objects.
@@ -44,11 +46,20 @@ const GameControl = {
         // Check if the pickup is collected
         if (this.pickup && this.pickup.isColliding(this.player)) {
             console.log("Pickup collected!"); // Notify that the pickup was collected
+            this.score += 1;
             this.pickup.resetPosition(); // Remove the pickup by reseting position
             }
              
-
+        this.drawScore();
         requestAnimationFrame(this.gameLoop.bind(this));
+    },
+
+    drawScore: function() {
+        const ctx = GameEnv.ctx
+        ctx.fillStyle = 'black'
+        ctx.font = '20px Arial'
+        ctx.fillText(`Score: ${this.score}`,10,10)
+
     },
 
     resize: function() {
