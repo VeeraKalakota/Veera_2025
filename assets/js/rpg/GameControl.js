@@ -42,7 +42,7 @@ const GameControl = {
         }
 
         // Check if the pickup is collected
-        if (this.Pickup && this.pickup.isColliding(this.player)) {
+        if (this.pickup && this.pickup.isColliding(this.player)) {
             console.log("Pickup collected!"); // Notify that the pickup was collected
             this.pickup.resetPosition(); // Remove the pickup by reseting position
             }
