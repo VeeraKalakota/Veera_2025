@@ -5,6 +5,8 @@ export class Pickup {
     constructor(x, y, imageSrc) {
         this.x = x; // Set initial x position
         this.y = y; // Set initial y position
+        this.width = 59; // Set the width of the pickup
+        this.height = 66; // Set the height of the pickup
         this.image = new Image();
         this.image.src = imageSrc; // Load the starfish image
         
@@ -20,6 +22,16 @@ export class Pickup {
             ctx.drawImage(this.image, this.x, this.y);
         }
     }
+
+    isColliding(player)
+     {
+        return(
+            player.position.x < this.x + this.width &&
+            player.position.x + player.width < this.x &&
+            player.position.y < this.y + this.height &&
+            player.position.y + player.height < this.y 
+        )
+     }
 }
 
 export default Pickup;
