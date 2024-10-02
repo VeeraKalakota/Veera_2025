@@ -27,9 +27,9 @@ export class Pickup {
      {
         return(
             player.position.x < this.x + this.width &&
-            player.position.x + player.width < this.x &&
+            player.position.x + player.width > this.x &&
             player.position.y < this.y + this.height &&
-            player.position.y + player.height < this.y 
+            player.position.y + player.height > this.y 
         );
      }
 }
