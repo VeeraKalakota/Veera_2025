@@ -37,10 +37,12 @@ const GameControl = {
         GameEnv.clear(); // Clear the canvas
         this.background.draw();
         this.player.update();
-        this.pickup.draw(GameEnv.ctx);
+        if (this.pickup) {
+            this.pickup.draw(GameEnv.ctx);
+        }
 
         // Check if the pickup is collected
-        if (this.pickup.isColliding(this.player)) {
+        if (this.Pickup && this.pickup.isColliding(this.player)) {
             console.log("Pickup collected!"); // Notify that the pickup was collected
             this.pickup.resetPosition(); // Remove the pickup by reseting position
             }
