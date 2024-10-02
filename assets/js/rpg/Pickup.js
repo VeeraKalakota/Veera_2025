@@ -30,7 +30,7 @@ export class Pickup {
             player.position.x + player.width < this.x &&
             player.position.y < this.y + this.height &&
             player.position.y + player.height < this.y 
-        )
+        );
      }
 }
 
