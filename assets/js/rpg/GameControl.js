@@ -42,7 +42,6 @@ const GameControl = {
             this.pickup = null;
         } else if (this.pickup) {
             this.pickup.draw(GameEnv.ctx);
-        }
         requestAnimationFrame(this.gameLoop.bind(this));
     },
 
