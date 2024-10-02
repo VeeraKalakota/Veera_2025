@@ -37,6 +37,13 @@ const GameControl = {
         this.background.draw();
         this.player.update();
         this.pickup.draw(GameEnv.ctx);
+    // Check if the pickup is collected
+        if (this.pickup.isColliding(this.player)) {
+        console.log("Pickup collected!"); // Notify that the pickup was collected
+        this.pickup = null; // Remove the pickup by setting it to null
+        } else if (this.pickup) {
+        this.pickup.draw(GameEnv.ctx); // Draw the pickup if it's still there
+    }
         requestAnimationFrame(this.gameLoop.bind(this));
     },
 
