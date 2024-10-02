@@ -32,6 +32,12 @@ export class Pickup {
             player.position.y + player.height > this.y 
         );
      }
+    
+    resetPosition() {
+        // Reset the Pickup Sprite to a new random position
+        this.x = Math.random() * (GameEnv.innerWidth - this.width);
+        this.y = Math.random() * (GameEnv.innerHeight - this.Height)
+    }
 }
 
 export default Pickup;

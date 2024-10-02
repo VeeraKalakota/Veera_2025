@@ -26,10 +26,11 @@ const GameControl = {
         GameEnv.create(); // Create the Game World, this is pre-requisite for all game objects.
         this.background = new Background(assets.image || null);
         this.player = new Player(assets.sprite || null);
-       
+        
         // Create starfish pickups
         this.pickup = new Pickup(100, 100, assets.seaweed.src); // Add a pickup at (100, 100)
         this.gameLoop();
+
     },
 
     gameLoop: function() {
@@ -37,14 +38,11 @@ const GameControl = {
         this.background.draw();
         this.player.update();
         this.pickup.draw(GameEnv.ctx);
-    
-        if (this.pickup) {
-            this.pickup.draw(GameEnv.ctx); // Draw the pickup if it's still there
-            }
+
         // Check if the pickup is collected
         if (this.pickup.isColliding(this.player)) {
             console.log("Pickup collected!"); // Notify that the pickup was collected
-            this.pickup = null; // Remove the pickup by setting it to null
+            this.pickup.resetPosition(); // Remove the pickup by reseting position
             }
              
 
