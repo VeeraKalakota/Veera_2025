@@ -36,12 +36,7 @@ const GameControl = {
         GameEnv.clear(); // Clear the canvas
         this.background.draw();
         this.player.update();
-
-        if (this.pickup.isColliding(this.player)) {
-            console.log("Pickup Collected!");
-            this.pickup = null;
-        } else if (this.pickup) {
-            this.pickup.draw(GameEnv.ctx);
+        this.pickup.draw(GameEnv.ctx);
         requestAnimationFrame(this.gameLoop.bind(this));
     },
 
