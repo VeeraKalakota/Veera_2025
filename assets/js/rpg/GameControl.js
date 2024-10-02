@@ -20,7 +20,7 @@ import Pickup from './Pickup.js'; // Import the new class
  * @property {function} resize - Resize the canvas and player object when the window is resized.
  */
 const GameControl = {
-    pickups: [], // Array to hold pickups
+    pickup: null, 
 
     start: function(assets = {}) {
         GameEnv.create(); // Create the Game World, this is pre-requisite for all game objects.
