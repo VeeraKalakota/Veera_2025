@@ -24,3 +24,8 @@ Here is a screenshot of my new background with the sprite:
 - Here is some example code from player.js to illustrate this: 
 
 file:///home/chronos/u-187f5e7304e68048d0e1b377184e52b47c75387f/MyFiles/Downloads/Screenshot%202024-09-25%208.41.45%20PM.png
+
+# RPG Game Ideas:
+- ### include levels, each level has an objective the player must complete, which will increase in difficulty as you progress into the game.
+- ### incorporate sound effects for the player to have a more intense gaming experience
+- ### should have multiple sprites, some for specific levels. For example, we can include a monster sprite that can chase the player through the maze. 

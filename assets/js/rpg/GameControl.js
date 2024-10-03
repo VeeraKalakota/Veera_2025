@@ -20,25 +20,46 @@ import Pickup from './Pickup.js'; // Import the new class
  * @property {function} resize - Resize the canvas and player object when the window is resized.
  */
 const GameControl = {
-    pickups: [], // Array to hold pickups
+    pickup: null, 
+    score: 0, // Initialize score to zero
+
 
     start: function(assets = {}) {
         GameEnv.create(); // Create the Game World, this is pre-requisite for all game objects.
         this.background = new Background(assets.image || null);
         this.player = new Player(assets.sprite || null);
-       
+        
         // Create starfish pickups
-        this.pickups.push(new Pickup(100, 100, assets.seaweed.src)); // Add a pickup at (100, 100)
+        this.pickup = new Pickup(100, 100, assets.seaweed.src); // Add a pickup at (100, 100)
         this.gameLoop();
+
     },
 
     gameLoop: function() {
         GameEnv.clear(); // Clear the canvas
         this.background.draw();
         this.player.update();
-         // Draw all pickups
-        this.pickups.forEach(pickup => pickup.draw(GameEnv.ctx));
+        if (this.pickup) {
+            this.pickup.draw(GameEnv.ctx);
+        }
+
+        // Check if the pickup is collected
+        if (this.pickup && this.pickup.isColliding(this.player)) {
+            console.log("Pickup collected!"); // Notify that the pickup was collected
+            this.score += 1;
+            this.pickup.resetPosition(); // Remove the pickup by reseting position
+            }
+             
+        this.drawScore();
         requestAnimationFrame(this.gameLoop.bind(this));
+    },
+
+    drawScore: function() {
+        const ctx = GameEnv.ctx
+        ctx.fillStyle = 'black'
+        ctx.font = '60px Arial'
+        ctx.fillText(`Score: ${this.score}`,50,50)
+
     },
 
     resize: function() {
