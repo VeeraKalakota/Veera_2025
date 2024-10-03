@@ -23,15 +23,22 @@ export class Pickup {
         }
     }
 
-    isColliding(player)
-     {
-        return(
-            player.position.x < this.x + this.width &&
-            player.position.x + player.width > this.x &&
-            player.position.y < this.y + this.height &&
-            player.position.y + player.height > this.y 
-        );
-     }
+// In Pickup.js
+    isColliding(player) {
+        const playerCenterX = player.position.x + player.width / 2;
+        const playerCenterY = player.position.y + player.height / 2;
+        const pickupCenterX = this.x + this.width / 2;
+        const pickupCenterY = this.y + this.height / 2;
+
+        const dx = playerCenterX - pickupCenterX;
+        const dy = playerCenterY - pickupCenterY;
+        const distance = Math.sqrt(dx * dx + dy * dy);
+
+        const collisionRadius = 50; // You can adjust this based on your needs
+
+        return distance < collisionRadius; // Returns true if the player is close enough
+    }
+
     
     resetPosition() {
         // Reset the Pickup Sprite to a new random position
