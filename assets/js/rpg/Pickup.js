@@ -24,7 +24,7 @@ export class Pickup {
     }
 
     isColliding(player) {
-        // Calculate the centers of the player and pickup
+        // Calculate the center points
         const playerCenterX = player.position.x + player.width / 2;
         const playerCenterY = player.position.y + player.height / 2;
         const pickupCenterX = this.x + this.width / 2;
@@ -35,12 +35,13 @@ export class Pickup {
         const dy = playerCenterY - pickupCenterY;
         const distance = Math.sqrt(dx * dx + dy * dy);
 
-        // Define the collision radius (average of both objects)
-        const collisionRadius = (player.width / 2 + this.width / 2);
+        // Define a pickup radius (e.g., 50 pixels)
+        const pickupRadius = 75; // Adjust this value based on your game's needs
 
-        // Check for collision
-        return distance < collisionRadius;
+        // Check for collision based on proximity
+        return distance < pickupRadius;
     }
+
 
 
 
