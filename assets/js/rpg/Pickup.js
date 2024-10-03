@@ -23,8 +23,6 @@ export class Pickup {
         }
     }
 
-// In Pickup.js
-    // In Pickup.js
     isColliding(player) {
         // Calculate the centers of the player and pickup
         const playerCenterX = player.position.x + player.width / 2;
@@ -32,17 +30,18 @@ export class Pickup {
         const pickupCenterX = this.x + this.width / 2;
         const pickupCenterY = this.y + this.height / 2;
 
-        // Calculate the distance in x and y directions
-        const dx = Math.abs(playerCenterX - pickupCenterX);
-        const dy = Math.abs(playerCenterY - pickupCenterY);
+        // Calculate the distance between the centers
+        const dx = playerCenterX - pickupCenterX;
+        const dy = playerCenterY - pickupCenterY;
+        const distance = Math.sqrt(dx * dx + dy * dy);
 
-        // Check if the distance is less than the combined width and height of both objects
-        const combinedHalfWidth = (player.width / 2) + (this.width / 2);
-        const combinedHalfHeight = (player.height / 2) + (this.height / 2);
+        // Define the collision radius (average of both objects)
+        const collisionRadius = (player.width / 2 + this.width / 2);
 
         // Check for collision
-        return dx < combinedHalfWidth && dy < combinedHalfHeight;
+        return distance < collisionRadius;
     }
+
 
 
     
