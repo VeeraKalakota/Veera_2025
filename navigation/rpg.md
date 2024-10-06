@@ -40,10 +40,10 @@ permalink: /rpg/
     const seaweed = { src: seaweed_src, data: seaweed_data };
 
     // Fish sprite data
-    const fish_src = "{{site.baseurl}}/images/rpg/fish.png"; // Update with the correct fish image URL
+    const fish_src = "{{site.baseurl}}/images/rpg/fishies.png"; // Update with the correct fish image URL
     const fish_data = {
         SCALE_FACTOR: 10,
-        pixels: { height: 128, width: 128 }, // Adjust based on your fish image size
+        pixels: { height: 128, width: 97 }, // Adjust based on your fish image size
     };
     const fish = { src: fish_src, data: fish_data };
 
