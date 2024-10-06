@@ -48,7 +48,7 @@ permalink: /rpg/
     const fish = { src: fish_src, data: fish_data };
 
     // Assets for game
-    const assets = { image: image, sprite: turtle, seaweed: seaweed, fish: fish };
+    const assets = { image: image, sprite: turtle, seaweed: seaweed};
 
     // Start game engine
     GameControl.start(assets);
