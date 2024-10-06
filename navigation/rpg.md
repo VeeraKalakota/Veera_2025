@@ -16,9 +16,9 @@ permalink: /rpg/
     };
     const image = {src: image_src, data: image_data};
 
-    // Sprite data
-    const sprite_src = "{{site.baseurl}}/images/rpg/turtle.png";
-    const sprite_data = {
+    // Turtle sprite data
+    const turtle_src = "{{site.baseurl}}/images/rpg/turtle.png";
+    const turtle_data = {
         SCALE_FACTOR: 10,
         STEP_FACTOR: 1000,
         ANIMATION_RATE: 100,
@@ -29,22 +29,26 @@ permalink: /rpg/
         right: {row: 2, start: 0, columns: 3 },
         up: {row: 3, start: 0, columns: 3 },
     };
-    const sprite = {src: sprite_src, data: sprite_data};
+    const turtle = {src: turtle_src, data: turtle_data};
 
     // Seaweed sprite data
     const seaweed_src = "{{site.baseurl}}/images/rpg/Seaweed.png";
     const seaweed_data = {
         SCALE_FACTOR: 10,    
-        pixels: { height: 66, width: 59 }, // Adjust based on your seaweed image size
+        pixels: { height: 66, width: 59 },
     };
     const seaweed = { src: seaweed_src, data: seaweed_data };
 
+    // Fish sprite data
+    const fish_src = "{{site.baseurl}}/images/rpg/fish.png"; // Update with the correct fish image URL
+    const fish_data = {
+        SCALE_FACTOR: 10,
+        pixels: { height: 128, width: 128 }, // Adjust based on your fish image size
+    };
+    const fish = { src: fish_src, data: fish_data };
+
     // Assets for game
-    //const assets = {}
-    //const assets = {image: image}
-    //const assets = {sprite: sprite}
-    const assets = {image: image, sprite: sprite ,seaweed: seaweed, // Add the starfish here
-     }
+    const assets = { image: image, sprite: turtle, seaweed: seaweed, fish: fish };
 
     // Start game engine
     GameControl.start(assets);

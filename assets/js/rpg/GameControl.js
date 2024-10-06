@@ -1,29 +1,27 @@
 import GameEnv from './GameEnv.js';
 import Background from './Background.js';
 import Player from './Player.js';
-import Pickup from './Fish.js'; // Import the Fish class
-
-// In GameControl.js
+import Fish from './Fish.js';
+import Pickup from './Pickup.js'; // Import the Pickup class
 
 const GameControl = {
     turtle: null,
     fish: null,
     score: 0,
-    seaweedCollected: 0, // Track seaweed collected by turtle
+    seaweedCollected: 0,
 
     start: function(assets = {}) {
-        GameEnv.create(); // Create the Game World
+        GameEnv.create();
         this.background = new Background(assets.image || null);
-        this.turtle = new Turtle(assets.sprite || null); // Create Turtle player
-        this.fish = new Fish(assets.fishSprite || null); // Create Fish player
-        
-        // Create starfish pickups
-        this.pickup = new Pickup(100, 100, assets.seaweed.src); // Add a pickup at (100, 100)
+        this.turtle = new Player(assets.sprite || null); // Create Turtle player
+        this.fish = new Fish(assets.fish || null); // Create Fish player
+
+        this.pickup = new Pickup(100, 100, assets.seaweed.src); // Seaweed pickup
         this.gameLoop();
     },
 
     gameLoop: function() {
-        GameEnv.clear(); // Clear the canvas
+        GameEnv.clear();
         this.background.draw();
         this.turtle.update(); // Update turtle
         this.fish.update(); // Update fish
@@ -32,20 +30,18 @@ const GameControl = {
             this.pickup.draw(GameEnv.ctx);
         }
 
-        // Check for collisions and scoring
+        // Check for collisions
         if (this.pickup && this.pickup.isColliding(this.turtle)) {
             console.log("Turtle collected a pickup!");
             this.seaweedCollected += 1;
             this.pickup.resetPosition();
         }
 
-        // Check for fish collision with turtle
         if (this.fish.isColliding(this.turtle)) {
             console.log("Fish caught the turtle! Player 2 wins!");
             // Display win message and stop game...
         }
 
-        // Check if turtle wins
         if (this.seaweedCollected >= 20) {
             console.log("Player 1 wins!");
             // Display win message and stop game...
@@ -55,9 +51,12 @@ const GameControl = {
         requestAnimationFrame(this.gameLoop.bind(this));
     },
 
-    // Existing methods...
+    drawScore: function() {
+        const ctx = GameEnv.ctx;
+        ctx.fillStyle = 'white';
+        ctx.font = '20px Arial';
+        ctx.fillText(`Seaweed Collected: ${this.seaweedCollected}`, 10, 20);
+    },
 };
-
-// Don't forget to bind resize and any other necessary methods
 
 export default GameControl;

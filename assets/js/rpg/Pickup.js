@@ -1,55 +1,37 @@
-// Pickup.js
 import GameEnv from './GameEnv.js';
 
 export class Pickup {
     constructor(x, y, imageSrc) {
-        this.x = x; // Set initial x position
-        this.y = y; // Set initial y position
+        this.x = x;
+        this.y = y;
         this.width = 59; // Set the width of the pickup
         this.height = 66; // Set the height of the pickup
         this.image = new Image();
-        this.image.src = imageSrc; // Load the starfish image
+        this.image.src = imageSrc; 
         
         // Ensure the image is drawn only after it's loaded
         this.image.onload = () => {
-            this.loaded = true; // Flag to indicate the image is loaded
+            this.loaded = true; 
         };
-        this.loaded = false; // Initially set to false
+        this.loaded = false; 
     }
 
     draw(ctx) {
-        if (this.loaded) { // Only draw if the image is loaded
+        if (this.loaded) { 
             ctx.drawImage(this.image, this.x, this.y);
         }
     }
 
     isColliding(player) {
-        // Calculate the center points
-        const playerCenterX = player.position.x + player.width / 2;
-        const playerCenterY = player.position.y + player.height / 2;
-        const pickupCenterX = this.x + this.width / 2;
-        const pickupCenterY = this.y + this.height / 2;
-
-        // Calculate the distance between the centers
-        const dx = playerCenterX - pickupCenterX;
-        const dy = playerCenterY - pickupCenterY;
-        const distance = Math.sqrt(dx * dx + dy * dy);
-
-        // Define a pickup radius (e.g., 50 pixels)
-        const pickupRadius = 75; // Adjust this value based on your game's needs
-
-        // Check for collision based on proximity
-        return distance < pickupRadius;
+        return (this.x < player.position.x + player.width &&
+                this.x + this.width > player.position.x &&
+                this.y < player.position.y + player.height &&
+                this.y + this.height > player.position.y);
     }
 
-
-
-
-    
     resetPosition() {
-        // Reset the Pickup Sprite to a new random position
         this.x = Math.random() * (GameEnv.innerWidth - this.width);
-        this.y = Math.random() * (GameEnv.innerHeight - this.height)
+        this.y = Math.random() * (GameEnv.innerHeight - this.height);
     }
 }
 
