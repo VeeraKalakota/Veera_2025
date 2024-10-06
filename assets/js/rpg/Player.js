@@ -42,7 +42,7 @@ const ANIMATION_RATE = 1; // 1/nth of the frame rate
 
 const GameControl = {
     turtle: null,
-    fish: null,
+   // fish: null,
     score: 0,
     seaweedCollected: 0, // Track seaweed collected by turtle
 
@@ -50,7 +50,7 @@ const GameControl = {
         GameEnv.create(); // Create the Game World
         this.background = new Background(assets.image || null);
         this.turtle = new Turtle(assets.sprite || null); // Create Turtle player
-        this.fish = new fish(assets.fish || null); // Create fish player
+        //this.fish = new fish(assets.fish || null); // Create fish player
         
         // Create starfish pickups
         this.pickup = new Pickup(100, 100, assets.seaweed.src); // Add a pickup at (100, 100)
@@ -61,7 +61,7 @@ const GameControl = {
         GameEnv.clear(); // Clear the canvas
         this.background.draw();
         this.turtle.update(); // Update turtle
-        this.fish.update(); // Update fish
+        //this.fish.update(); // Update fish
 
         if (this.pickup) {
             this.pickup.draw(GameEnv.ctx);
@@ -74,12 +74,12 @@ const GameControl = {
             this.pickup.resetPosition();
         }
 
-        // Check for fish collision with turtle
+      /*   // Check for fish collision with turtle
         if (this.fish.isColliding(this.turtle)) {
             console.log("Fish caught the turtle! Player 2 wins!");
             // Display win message and stop game...
         }
-
+ */
         // Check if turtle wins
         if (this.seaweedCollected >= 20) {
             console.log("Player 1 wins!");
