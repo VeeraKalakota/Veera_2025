@@ -45,7 +45,7 @@ class Fish extends Player {
      * 
      * @param {Object|null} sprite - The sprite data for the player. If null, a default red square is used.
      */
-    constructor() {
+    constructor(sprite = null) {
         super(sprite);
     }
 
