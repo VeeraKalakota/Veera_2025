@@ -18,6 +18,7 @@ permalink: /rpg/
 
     // Turtle sprite data
     const turtle_src = "{{site.baseurl}}/images/rpg/turtle.png";
+    const fish_src = "{{site.baseurl}}/images/rpg/fishies.png"
     const turtle_data = {
         SCALE_FACTOR: 10,
         STEP_FACTOR: 1000,
@@ -29,7 +30,19 @@ permalink: /rpg/
         right: {row: 2, start: 0, columns: 3 },
         up: {row: 3, start: 0, columns: 3 },
     };
+    const fish_data = {
+        SCALE_FACTOR: 10,
+        STEP_FACTOR: 1000,
+        ANIMATION_RATE: 100,
+        pixels: {height: 280, width: 256},
+        orientation: {rows: 4, columns: 3 },
+        down: {row: 0, start: 0, columns: 3 },
+        left: {row: 1, start: 0, columns: 3 },
+        right: {row: 2, start: 0, columns: 3 },
+        up: {row: 3, start: 0, columns: 3 },
+    };
     const sprite = {src: turtle_src, data: turtle_data};
+    const sprite2 = {src: fish_src, data: fish_data};
 
     // Seaweed sprite data
     const seaweed_src = "{{site.baseurl}}/images/rpg/Seaweed.png";
@@ -39,8 +52,9 @@ permalink: /rpg/
     };
     const seaweed = { src: seaweed_src, data: seaweed_data };
 
+
     // Assets for game
-    const assets = { image: image, sprite: sprite, seaweed: seaweed};
+    const assets = { image: image, sprite: sprite, sprite2: sprite2, seaweed: seaweed};
 
     // Start game engine
     GameControl.start(assets);

@@ -28,6 +28,7 @@ const GameControl = {
         GameEnv.create(); // Create the Game World, this is pre-requisite for all game objects.
         this.background = new Background(assets.image || null);
         this.player = new Player(assets.sprite || null);
+        this.fish = new Player(assets.sprite2 || null);
         
         // Create starfish pickups
         this.pickup = new Pickup(100, 100, assets.seaweed.src); // Add a pickup at (100, 100)
@@ -39,6 +40,7 @@ const GameControl = {
         GameEnv.clear(); // Clear the canvas
         this.background.draw();
         this.player.update();
+        this.fish.update();
         if (this.pickup) {
             this.pickup.draw(GameEnv.ctx);
         }
@@ -65,6 +67,7 @@ const GameControl = {
     resize: function() {
         GameEnv.resize(); // Adapts the canvas to the new window size, ie a new Game World.
         this.player.resize();
+        this.fish.resize();
     }
 };
 
