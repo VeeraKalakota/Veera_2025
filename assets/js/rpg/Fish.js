@@ -1,4 +1,3 @@
-import GameEnv from './GameEnv.js';
 import Player from './Player.js';
 
 // Define non-mutable constants as defaults
