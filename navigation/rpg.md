@@ -41,6 +41,7 @@ permalink: /rpg/
         right: {row: 2, start: 0, columns: 3 },
         up: {row: 3, start: 0, columns: 3 },
     };
+
     const sprite = {src: turtle_src, data: turtle_data};
     const sprite2 = {src: fish_src, data: fish_data};
 
