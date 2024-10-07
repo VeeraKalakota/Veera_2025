@@ -29,7 +29,7 @@ permalink: /rpg/
         right: {row: 2, start: 0, columns: 3 },
         up: {row: 3, start: 0, columns: 3 },
     };
-    const turtle = {src: turtle_src, data: turtle_data};
+    const sprite = {src: turtle_src, data: turtle_data};
 
     // Seaweed sprite data
     const seaweed_src = "{{site.baseurl}}/images/rpg/Seaweed.png";
@@ -40,7 +40,7 @@ permalink: /rpg/
     const seaweed = { src: seaweed_src, data: seaweed_data };
 
     // Assets for game
-    const assets = { image: image, sprite: turtle, seaweed: seaweed};
+    const assets = { image: image, sprite: sprite, seaweed: seaweed};
 
     // Start game engine
     GameControl.start(assets);
