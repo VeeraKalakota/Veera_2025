@@ -58,7 +58,8 @@ const GameControl = {
             this.score -= 1;
             this.fish.reset(); // Remove the pickup by reseting position
             }
-             
+
+    
         this.drawScore();
         requestAnimationFrame(this.gameLoop.bind(this));
     },
@@ -80,5 +81,17 @@ const GameControl = {
 
 // Detect window resize events and call the resize function.
 window.addEventListener('resize', GameControl.resize.bind(GameControl));
+
+document.addEventListener('keydown', function(event) {
+    if (event.key === "f" || event.key === "F") {
+        toggleFullScreen();
+    }
+});
+
+// Optional: Button to toggle fullscreen mode
+const fullscreenButton = document.getElementById('fullscreen-btn');
+if (fullscreenButton) {
+    fullscreenButton.addEventListener('click', toggleFullScreen);
+}
 
 export default GameControl;
