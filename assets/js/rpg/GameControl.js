@@ -52,6 +52,12 @@ const GameControl = {
             this.score += 1;
             this.pickup.resetPosition(); // Remove the pickup by reseting position
             }
+
+        if (this.fish && this.fish.isColliding(this.player)) {
+            console.log("Fish Collided with Player!"); // Notify that the fish collided
+            this.score -= 1;
+            this.fish.reset(); // Remove the pickup by reseting position
+            }
              
         this.drawScore();
         requestAnimationFrame(this.gameLoop.bind(this));
