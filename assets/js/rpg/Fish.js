@@ -48,7 +48,7 @@ class Fish extends Player {
     constructor(sprite = null) {
         super(sprite);
         this.position = { x: GameEnv.innerWidth - this.size, y: GameEnv.innerHeight - this.size };
-        this.direction = 'down'; // Initial direction
+        this.direction = 'left'; // Initial direction
     }
 
     isColliding(player) {
