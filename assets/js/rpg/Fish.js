@@ -47,7 +47,7 @@ class Fish extends Player {
      */
     constructor(sprite = null) {
         super(sprite);
-        this.position = { x: GameEnv.innerWidth - this.size, y: 0 };
+        this.position = { x: GameEnv.innerWidth - this.size, y: GameEnv.innerHeight - this.size };
     }
 
     /**
