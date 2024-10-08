@@ -1,3 +1,4 @@
+import GameEnv from './GameEnv.js';
 import Player from './Player.js';
 
 // Define non-mutable constants as defaults
@@ -46,6 +47,7 @@ class Fish extends Player {
      */
     constructor(sprite = null) {
         super(sprite);
+        this.position = { x: GameEnv.innerWidth - this.size, y: 0 };
     }
 
     /**
