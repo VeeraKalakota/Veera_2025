@@ -1,28 +1,27 @@
-import GameEnv from './GameEnv.js';
-import Background from './Background.js';
-import Player from './Player.js';
-import Pickup from './Pickup.js';
-import Fish from './Fish.js';
-
 const GameControl = {
     pickup: null, 
-    score: 0, // Initialize score to zero
-    gameOver: false, // Add a gameOver property
+    score: 0,
+    gameOver: false,
 
     start: function(assets = {}) {
-        GameEnv.create(); // Create the Game World
+        this.initializeGame(assets); // Initialize game state
+        this.gameLoop();
+    },
+
+    initializeGame: function(assets) {
         this.background = new Background(assets.image || null);
         this.player = new Player(assets.sprite || null);
         this.fish = new Fish(assets.sprite2 || null);
         
-        this.pickup = new Pickup(100, 100, assets.seaweed.src); // Add a pickup at (100, 100)
-        this.gameLoop();
+        this.pickup = new Pickup(100, 100, assets.seaweed.src);
+        this.score = 0; // Reset score
+        this.gameOver = false; // Reset game over flag
     },
 
     gameLoop: function() {
-        if (this.gameOver) return; // Stop the loop if the game is over
+        if (this.gameOver) return;
 
-        GameEnv.clear(); // Clear the canvas
+        GameEnv.clear();
         this.background.draw();
         this.player.update();
         this.fish.update();
@@ -30,22 +29,19 @@ const GameControl = {
             this.pickup.draw(GameEnv.ctx);
         }
 
-        // Check if the pickup is collected
         if (this.pickup && this.pickup.isColliding(this.player)) {
             console.log("Pickup collected!");
             this.score += 1;
-            this.pickup.resetPosition(); // Reset position of the pickup
+            this.pickup.resetPosition();
         }
 
-        // Check for collision with fish
         if (this.fish && this.fish.isColliding(this.player)) {
             console.log("Fish Collided with Player!");
-            this.endGame("Fish Wins!"); // End game if fish collides
+            this.endGame("Fish Wins!");
         }
 
-        // Check for win condition
         if (this.score >= 15) {
-            this.endGame("Turtle Wins!"); // End game if score reaches 15
+            this.endGame("Turtle Wins!");
         }
 
         this.drawScore();
@@ -53,14 +49,32 @@ const GameControl = {
     },
 
     endGame: function(message) {
-        this.gameOver = true; // Set game over flag
-        GameEnv.clear(); // Clear the canvas
+        this.gameOver = true;
+        GameEnv.clear();
         const ctx = GameEnv.ctx;
         ctx.fillStyle = 'black';
-        ctx.fillRect(0, 0, GameEnv.canvas.width, GameEnv.canvas.height); // Fill the screen with black
-        ctx.fillStyle = 'white'; // Change text color
+        ctx.fillRect(0, 0, GameEnv.canvas.width, GameEnv.canvas.height);
+        ctx.fillStyle = 'white';
         ctx.font = '60px Arial';
         ctx.fillText(message, GameEnv.canvas.width / 2 - ctx.measureText(message).width / 2, GameEnv.canvas.height / 2);
+        
+        // Add restart functionality
+        ctx.font = '30px Arial';
+        ctx.fillText("Press R to Restart", GameEnv.canvas.width / 2 - ctx.measureText("Press R to Restart").width / 2, GameEnv.canvas.height / 2 + 50);
+        
+        window.addEventListener('keydown', this.handleKeyDown.bind(this));
+    },
+
+    handleKeyDown: function(event) {
+        if (event.key === 'r' || event.key === 'R') {
+            this.restartGame();
+        }
+    },
+
+    restartGame: function() {
+        window.removeEventListener('keydown', this.handleKeyDown.bind(this));
+        this.initializeGame(); // Reinitialize game state
+        this.gameLoop(); // Start the game loop again
     },
 
     drawScore: function() {
@@ -71,13 +85,12 @@ const GameControl = {
     },
 
     resize: function() {
-        GameEnv.resize(); // Adapts the canvas to the new window size
+        GameEnv.resize();
         this.player.resize();
         this.fish.resize();
     }
 };
 
-// Detect window resize events and call the resize function.
 window.addEventListener('resize', GameControl.resize.bind(GameControl));
 
 export default GameControl;
