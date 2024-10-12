@@ -42,7 +42,7 @@ const GameControl = {
         const ctx = GameEnv.ctx
         ctx.fillStyle = 'white'
         ctx.font = '100px Arial'
-        ctx.fillText(`Game Over!`,100,300)
+        ctx.fillText(`Game Over!`,10,70)
         // ctx.fillText(`Turtle Wins!`,200,300)
     },
 
