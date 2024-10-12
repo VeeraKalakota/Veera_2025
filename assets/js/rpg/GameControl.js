@@ -61,7 +61,7 @@ const GameControl = {
             this.pickup.resetPosition(); // Remove the pickup by reseting position
             }
 
-        if (this.score == 15) {
+        if (this.score == 5) {
             this.endGame();
         }
 
