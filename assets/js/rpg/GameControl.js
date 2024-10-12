@@ -40,7 +40,7 @@ const GameControl = {
         GameEnv.clear();
         this.Background.draw();
         const ctx = GameEnv.ctx
-        ctx.fillStyle = 'black'
+        ctx.fillStyle = 'white'
         ctx.font = '100px Arial'
         ctx.fillText(`Game Over!`,100,300)
         ctx.fillText(`Turtle Wins!`,200,300)
