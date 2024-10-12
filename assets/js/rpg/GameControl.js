@@ -34,7 +34,16 @@ const GameControl = {
         // Create starfish pickups
         this.pickup = new Pickup(100, 100, assets.seaweed.src); // Add a pickup at (100, 100)
         this.gameLoop();
+    },
 
+    endGame: function () {
+        GameEnv.clear();
+        this.Background.draw();
+        const ctx = GameEnv.ctx
+        ctx.fillStyle = 'black'
+        ctx.font = '100px Arial'
+        ctx.fillText(`Game Over!`,100,300)
+        ctx.fillText(`Turtle Wins!`,200,300)
     },
 
     gameLoop: function() {
@@ -48,13 +57,15 @@ const GameControl = {
 
         // Check if the pickup is collected
         if (this.pickup && this.pickup.isColliding(this.player)) {
-            console.log("Pickup collected!"); // Notify that the pickup was collected
             this.score += 1;
             this.pickup.resetPosition(); // Remove the pickup by reseting position
             }
 
+        if (this.score == 15) {
+            this.endGame();
+        }
+
         if (this.fish && this.fish.isColliding(this.player)) {
-            console.log("Fish Collided with Player!"); // Notify that the fish collided
             this.score -= 1;
             }
 
