@@ -38,7 +38,7 @@ const GameControl = {
 
     endGame: function () {
         GameEnv.clear();
-        this.Background.draw();
+        // this.Background.draw();
         const ctx = GameEnv.ctx
         ctx.fillStyle = 'white'
         ctx.font = '100px Arial'
