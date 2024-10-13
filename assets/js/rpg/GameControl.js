@@ -42,8 +42,8 @@ const GameControl = {
         GameEnv.clear();
         const ctx = GameEnv.ctx
         ctx.fillStyle = 'white'
-        ctx.font = '100px Arial'
-        ctx.fillText(`Game Over! ${winner} Wins!`,10,70)
+        ctx.font = '80px Arial'
+        ctx.fillText(`Game Over! ${winner} Wins! Press "R" to restart the Game`,10,70)
         window.addEventListener("keypress",function(event){
             if (event.code == 82) {
                 this.start()
