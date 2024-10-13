@@ -41,11 +41,7 @@ const GameControl = {
         const ctx = GameEnv.ctx
         ctx.fillStyle = 'white'
         ctx.font = '100px Arial'
-        ctx.fillText(`Game Over!`,10,70)
-        const ctx2 = GameEnv.ctx
-        ctx2.fillStyle = 'white'
-        ctx2.font = '100px Arial'
-        ctx2.fillText(`Turtle Wins!`,100,100)
+        ctx.fillText(`Game Over! Turtle Wins!`,10,70)
     },
 
     gameLoop: function() {
