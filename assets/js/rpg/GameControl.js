@@ -36,12 +36,14 @@ const GameControl = {
         this.gameLoop();
     },
 
-    endGame: function () {
+    
+    
+    endGame: function (winner) {
         GameEnv.clear();
         const ctx = GameEnv.ctx
         ctx.fillStyle = 'white'
         ctx.font = '100px Arial'
-        ctx.fillText(`Game Over! Turtle Wins!`,10,70)
+        ctx.fillText(`Game Over! ${winner} Wins!`,10,70)
     },
 
     gameLoop: function() {
@@ -61,13 +63,16 @@ const GameControl = {
 
         if (this.fish && this.fish.isColliding(this.player)) {
             this.score -= 1;
+            if (this.score <= 0) {
+               this.endGame("Fish") 
             }
+        }
 
         this.drawScore();
         requestAnimationFrame(this.gameLoop.bind(this));
 
         if (this.score >= 5) {
-            this.endGame();
+            this.endGame("Turtle");
             return
         }
     },
