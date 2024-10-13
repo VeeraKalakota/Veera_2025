@@ -38,12 +38,11 @@ const GameControl = {
 
     endGame: function () {
         GameEnv.clear();
-        // this.Background.draw();
         const ctx = GameEnv.ctx
         ctx.fillStyle = 'white'
         ctx.font = '100px Arial'
         ctx.fillText(`Game Over!`,10,70)
-        // ctx.fillText(`Turtle Wins!`,200,300)
+        ctx.fillText(`Turtle Wins!`,30,70)
     },
 
     gameLoop: function() {
@@ -61,16 +60,17 @@ const GameControl = {
             this.pickup.resetPosition(); // Remove the pickup by reseting position
             }
 
-        if (this.score >= 5) {
-            this.endGame();
-        }
-
         if (this.fish && this.fish.isColliding(this.player)) {
             this.score -= 1;
             }
 
         this.drawScore();
         requestAnimationFrame(this.gameLoop.bind(this));
+
+        if (this.score >= 5) {
+            this.endGame();
+            return
+        }
     },
 
     drawScore: function() {
