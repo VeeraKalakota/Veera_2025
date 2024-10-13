@@ -65,6 +65,7 @@ const GameControl = {
             this.score -= 1;
             if (this.score <= 0) {
                this.endGame("Fish") 
+               return
             }
         }
 
