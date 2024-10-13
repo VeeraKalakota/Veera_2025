@@ -44,6 +44,12 @@ const GameControl = {
         ctx.fillStyle = 'white'
         ctx.font = '100px Arial'
         ctx.fillText(`Game Over! ${winner} Wins!`,10,70)
+        window.addEventListener("keypress",function(event){
+            if (event.code == 82) {
+                this.start()
+            }
+        })
+
     },
 
     gameLoop: function() {
