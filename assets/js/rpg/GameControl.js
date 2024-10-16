@@ -40,17 +40,21 @@ const GameControl = {
     
     endGame: function (winner) {
         GameEnv.clear();
-        const ctx = GameEnv.ctx
-        ctx.fillStyle = 'white'
-        ctx.font = '70px Arial'
-        ctx.fillText(`Game Over! ${winner} Wins! Press "R" to restart the Game`,10,70)
-        window.addEventListener("keypress",function(event){
-            if (event.code == 82) {
-                this.start()
+        const ctx = GameEnv.ctx;
+        ctx.fillStyle = 'white';
+        ctx.font = '70px Arial';
+        ctx.fillText(`Game Over! ${winner} Wins! Press "R" to restart the Game`, 10, 70);
+        
+        const restartGame = (event) => {
+            if (event.code === 'KeyR') { // Use 'KeyR' instead of '82'
+                window.removeEventListener("keypress", restartGame); // Remove the listener
+                this.start();
             }
-        })
-
+        };
+    
+        window.addEventListener("keypress", restartGame);
     },
+    
 
     gameLoop: function() {
         GameEnv.clear(); // Clear the canvas
