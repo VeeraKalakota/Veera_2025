@@ -26,13 +26,13 @@ const GameControl = {
 
 
     start: function(assets = {}) {
-        GameEnv(); // Create the Game World, this is pre-requisite for all game objects.
-        this.backcreateground = new Background(assets.image || null);
+        GameEnv.create(); // Call the static method to set up the game environment
+        this.background = new Background(assets.image || null);
         this.player = new Player(assets.sprite || null);
         this.fish = new Fish(assets.sprite2 || null);
         
         // Create starfish pickups
-        this.pickup = new Pickup(100, 100, assets.seaweed.src); // Add a pickup at (100, 100)
+        this.pickup = new Pickup(100, 100, assets.seaweed.src);
         this.gameLoop();
     },
 
