@@ -32,8 +32,6 @@ const GameControl = {
         this.background = new Background(assets.image || null);
         this.player = new Player(assets.sprite || null);
         this.fish = new Fish(assets.sprite2 || null); 
-
-        // Create starfish pickups
         this.pickup = new Pickup(100, 100, assets.seaweed.src);
         this.gameLoop();
     },
@@ -50,8 +48,8 @@ const GameControl = {
         const restartGame = (event) => {
             if (event.code === 'KeyR') { // Use 'KeyR' instead of '82'
                 window.removeEventListener("keypress", restartGame); // Remove the listener
-                GameEnv.clear()
-                this.start();
+                GameEnv.clear();
+                this.gameLoop();
             }
         };
     
