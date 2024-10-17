@@ -27,10 +27,14 @@ const GameControl = {
 
     start: function(assets = {}) {
         GameEnv.create(); // Call the static method to set up the game environment
+        this.score = 0;
+
         this.background = new Background(assets.image || null);
         this.player = new Player(assets.sprite || null);
         this.fish = new Fish(assets.sprite2 || null);
         
+        this.player.setPosition(initialPlayerX, initialPlayerY) 
+
         // Create starfish pickups
         this.pickup = new Pickup(100, 100, assets.seaweed.src);
         this.gameLoop();
@@ -42,12 +46,13 @@ const GameControl = {
         GameEnv.clear();
         const ctx = GameEnv.ctx;
         ctx.fillStyle = 'white';
-        ctx.font = '70px Arial';
+        ctx.font = '50px Arial';
         ctx.fillText(`Game Over! ${winner} Wins! Press "R" to restart the Game`, 10, 70);
         
         const restartGame = (event) => {
             if (event.code === 'KeyR') { // Use 'KeyR' instead of '82'
                 window.removeEventListener("keypress", restartGame); // Remove the listener
+                
                 this.start();
             }
         };
@@ -55,6 +60,7 @@ const GameControl = {
         window.addEventListener("keypress", restartGame);
     },
     
+
 
     gameLoop: function() {
         GameEnv.clear(); // Clear the canvas
