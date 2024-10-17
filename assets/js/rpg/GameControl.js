@@ -39,7 +39,7 @@ const GameControl = {
     
     
     endGame: function (winner) {
-        GameEnv.clear();
+        // GameEnv.clear();
         const ctx = GameEnv.ctx;
         ctx.fillStyle = 'white';
         ctx.font = '50px Arial';
