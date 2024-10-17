@@ -23,11 +23,13 @@ import Fish from './Fish.js';
 const GameControl = {
     pickup: null, 
     score: 0, // Initialize score to zero
+    assets: null,
 
 
     start: function(assets = {}) {
         GameEnv.create(); // Call the static method to set up the game environment
         this.score = 0;
+        this.assets = assets
 
         this.background = new Background(assets.image || null);
         this.player = new Player(assets.sprite || null);
@@ -39,7 +41,7 @@ const GameControl = {
     
     
     endGame: function (winner) {
-        // GameEnv.clear();
+        GameEnv.clear();
         const ctx = GameEnv.ctx;
         ctx.fillStyle = 'white';
         ctx.font = '50px Arial';
@@ -48,8 +50,7 @@ const GameControl = {
         const restartGame = (event) => {
             if (event.code === 'KeyR') { // Use 'KeyR' instead of '82'
                 window.removeEventListener("keypress", restartGame); // Remove the listener
-                this.score = 0;
-                this.gameloop();
+                this.start(this.assets);
             }
         };
     
