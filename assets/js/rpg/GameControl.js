@@ -31,9 +31,7 @@ const GameControl = {
 
         this.background = new Background(assets.image || null);
         this.player = new Player(assets.sprite || null);
-        this.fish = new Fish(assets.sprite2 || null);
-        
-        this.player.setPosition(initialPlayerX, initialPlayerY) 
+        this.fish = new Fish(assets.sprite2 || null); 
 
         // Create starfish pickups
         this.pickup = new Pickup(100, 100, assets.seaweed.src);
