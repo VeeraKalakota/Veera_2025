@@ -52,7 +52,7 @@ const GameControl = {
         const restartGame = (event) => {
             if (event.code === 'KeyR') { // Use 'KeyR' instead of '82'
                 window.removeEventListener("keypress", restartGame); // Remove the listener
-                
+                GameEnv.clear()
                 this.start();
             }
         };
