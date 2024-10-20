@@ -29,3 +29,9 @@ file:///home/chronos/u-187f5e7304e68048d0e1b377184e52b47c75387f/MyFiles/Download
 - ### include levels, each level has an objective the player must complete, which will increase in difficulty as you progress into the game.
 - ### incorporate sound effects for the player to have a more intense gaming experience
 - ### should have multiple sprites, some for specific levels. For example, we can include a monster sprite that can chase the player through the maze. 
+
+
+## Gaming Hacks
+- ### Hack 1: Use 2D Array For Game:
+
+- ### Hack 2: Use Different Sprites:

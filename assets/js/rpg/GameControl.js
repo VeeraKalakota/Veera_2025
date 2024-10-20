@@ -4,6 +4,14 @@ import Player from './Player.js';
 import Pickup from './Pickup.js'; // Import the new class
 import Fish from './Fish.js';
 
+const qaArray = [
+    ["Sea-Life", [
+        { question: "True or false: JavaScript is an OOP Programing language", answer:"True"},
+        { question: "True or false: Turtles can only survive in the ocean", answer:"False"},
+        { question: "True or false: This game is the best game ever", answer:"True"}
+    ]],
+];
+
 /**
  * The GameControl object manages the game.
  * 
