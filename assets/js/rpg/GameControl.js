@@ -121,11 +121,11 @@ const GameControl = {
         }
     },
 
-    // New method to reset the question state
+/*     // New method to reset the question state
     resetQuestionState: function() {
         this.isQuestionActive = false;
         document.getElementById('questionAnswers').innerHTML = ""; // Clear the display if needed
-    },
+    }, */
 
     drawScore: function() {
         const ctx = GameEnv.ctx
