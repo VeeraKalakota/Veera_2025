@@ -61,10 +61,19 @@ const GameControl = {
         this.player = new Player(assets.sprite || null);
         this.fish = new Fish(assets.sprite2 || null); 
         this.pickup = new Pickup(100, 100, assets.seaweed.src);
+        this.initKeyListeners(); // initialize key listeners
         this.gameLoop();
     },
 
-    
+
+    initKeyListeners: function() {
+        window.addEventListener("keydown", (event) => {
+            if (event.code === "Escape" && !this.isQuestionActive) {
+                this.isQuestionActive = true; // Prevent further inputs
+                displayQuestionAnswers(qaArray); 
+            }
+        });
+    },
     
     endGame: function (winner) {
         GameEnv.clear();
@@ -100,7 +109,7 @@ const GameControl = {
             this.pickup.resetPosition(); // Remove the pickup by reseting position
             this.isQuestionActive = true; // Set flag to true
             displayQuestionAnswers(qaArray); 
-            } 
+        } 
     
 
 
