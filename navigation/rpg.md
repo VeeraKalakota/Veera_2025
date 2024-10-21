@@ -6,6 +6,9 @@ permalink: /rpg/
 
 <canvas id='gameCanvas'></canvas>
 
+<div id="questionAnswers" style="padding: 20px; background-color: #f9f9f9: border: 1px solid #ccc; margin-top: 20px;">
+</div>
+
 <script type="module">
     import GameControl from '{{site.baseurl}}/assets/js/rpg/GameControl.js';
 

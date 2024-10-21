@@ -12,6 +12,23 @@ const qaArray = [
     ]],
 ];
 
+function displayQuestionAnswers(qaArray) {
+    const questionAnswersDiv = document.getElementById('questionAnswers');
+    questionAnswersDiv.innerHTML = "";
+
+    for (let category of qaArray) {
+        const h2 = document.createElement('h2');
+        h2.innerHTML = category[0];
+        questionAnswersDiv.appendChild(h2);
+
+        for (let qa of category[1]) {
+            const p = document.createElement('p');
+            p.innerHTML = `<strong>Q:<strong/> ${qa.question} <br> <strong>A:</strong> ${qa.answer}`;
+            questionAnswersDiv.appendChild(p);
+        }
+    }
+
+}
 /**
  * The GameControl object manages the game.
  * 
@@ -32,6 +49,7 @@ const GameControl = {
     pickup: null, 
     score: 0, // Initialize score to zero
     assets: null,
+    isQuestionActive: false, // New flag to manage the state of the game
 
 
     start: function(assets = {}) {
@@ -77,10 +95,14 @@ const GameControl = {
         }
 
         // Check if the pickup is collected
-        if (this.pickup && this.pickup.isColliding(this.player)) {
+        if (this.pickup && this.pickup.isColliding(this.player) && !this.isQuestionActive) {
             this.score += 1;
             this.pickup.resetPosition(); // Remove the pickup by reseting position
-            }
+            this.isQuestionActive = true; // Set flag to true
+            displayQuestionAnswers(qaArray); 
+            } 
+    
+
 
         if (this.fish && this.fish.isColliding(this.player)) {
             this.score -= 1;
@@ -99,6 +121,12 @@ const GameControl = {
         }
     },
 
+    // New method to reset the question state
+    resetQuestionState: function() {
+        this.isQuestionActive = false;
+        document.getElementById('questionAnswers').innerHTML = ""; // Clear the display if needed
+    },
+
     drawScore: function() {
         const ctx = GameEnv.ctx
         ctx.fillStyle = 'black'
@@ -106,6 +134,7 @@ const GameControl = {
         ctx.fillText(`Score: ${this.score}`,10,70)
 
     },
+
 
     resize: function() {
         GameEnv.resize(); // Adapts the canvas to the new window size, ie a new Game World.
