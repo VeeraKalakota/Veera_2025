@@ -4,7 +4,7 @@ import Player from './Player.js';
 import Pickup from './Pickup.js'; // Import the new class
 import Fish from './Fish.js';
 
-const qaArray = [
+/* const qaArray = [
     ["Sea-Life", [
         { question: "True or false: JavaScript is an OOP Programing language", answer:"True"},
         { question: "True or false: Turtles can only survive in the ocean", answer:"False"},
@@ -28,7 +28,7 @@ function displayQuestionAnswers(qaArray) {
         }
     }
 
-}
+} */
 /**
  * The GameControl object manages the game.
  * 
@@ -61,19 +61,19 @@ const GameControl = {
         this.player = new Player(assets.sprite || null);
         this.fish = new Fish(assets.sprite2 || null); 
         this.pickup = new Pickup(100, 100, assets.seaweed.src);
-        this.initKeyListeners(); // initialize key listeners
+        // this.initKeyListeners(); // initialize key listeners
         this.gameLoop();
     },
 
 
-    initKeyListeners: function() {
+/*     initKeyListeners: function() {
         window.addEventListener("keydown", (event) => {
             if (event.code === "Escape" && !this.isQuestionActive) {
                 this.isQuestionActive = true; // Prevent further inputs
                 displayQuestionAnswers(qaArray); 
             }
         });
-    },
+    }, */
     
     endGame: function (winner) {
         GameEnv.clear();
@@ -107,8 +107,8 @@ const GameControl = {
         if (this.pickup && this.pickup.isColliding(this.player) && !this.isQuestionActive) {
             this.score += 1;
             this.pickup.resetPosition(); // Remove the pickup by reseting position
-            this.isQuestionActive = true; // Set flag to true
-            displayQuestionAnswers(qaArray); 
+            //this.isQuestionActive = true; // Set flag to true
+            //displayQuestionAnswers(qaArray); 
         } 
     
 
