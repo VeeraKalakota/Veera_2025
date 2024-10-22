@@ -8,7 +8,6 @@ permalink: /codingjourney/
 
 
 
-</br>
 
 
 
@@ -16,7 +15,6 @@ permalink: /codingjourney/
 
 
 
-</br>
 
 
 
@@ -33,7 +31,6 @@ permalink: /codingjourney/
 
 
 
-</br>
 
 
 
@@ -41,7 +38,6 @@ permalink: /codingjourney/
 
 
 
-</br>
 
 
 
