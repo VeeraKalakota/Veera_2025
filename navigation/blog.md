@@ -32,6 +32,13 @@ file:///home/chronos/u-187f5e7304e68048d0e1b377184e52b47c75387f/MyFiles/Download
 
 
 ## Gaming Hacks
-- ### Hack 1: Use 2D Array For Game:
+- ### Hack 1: Use 2D Array For Game: 
+    **This hack was done to demonstrate an example of some sort of communication between the player and the NPC**
+![alt text](image.png)
+
+
+
+
 
 - ### Hack 2: Use Different Sprites:
+    **This hack was done to demonstrate an example of the usage of different sprite files, no matter the shape or size.**
