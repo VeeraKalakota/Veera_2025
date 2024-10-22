@@ -37,5 +37,5 @@ permalink: /codingjourney/
 
 ### Here are some of my game links:
 - My Turtle Game: https://veerakalakota.github.io/Veera_2025/rpg/
-- Team Game: 
-- Original Game: 
+- Team Game: https://whitelunarium.github.io/RPG-Game/
+- Original Game: https://nighthawkcoders.github.io/portfolio_2025/rpg/latest
