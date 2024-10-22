@@ -11,6 +11,8 @@ permalink: /blogs/
 # Popcorn Hacks
 
 
+<br>
+
 
 ## JSON Object:
 *Here are some basic definitions that are included in this hack:*
@@ -20,6 +22,7 @@ permalink: /blogs/
 - GameEnv: This determines the sizes of the canvas properties.
 
 
+<br>
 
 
 ## New Background
@@ -27,7 +30,7 @@ Here is a screenshot of my new background with the sprite:
 ![image](https://github.com/user-attachments/assets/0611179a-a393-4446-86ea-5e9ff89e9c06)
 
 
-
+<br>
 
 
 ## Player Popcorn Hack:
@@ -37,6 +40,7 @@ Here is a screenshot of my new background with the sprite:
 file:///home/chronos/u-187f5e7304e68048d0e1b377184e52b47c75387f/MyFiles/Downloads/Screenshot%202024-09-25%208.41.45%20PM.png
 
 
+<br>
 
 
 # RPG Game Ideas:
@@ -45,7 +49,7 @@ file:///home/chronos/u-187f5e7304e68048d0e1b377184e52b47c75387f/MyFiles/Download
 - ### should have multiple sprites, some for specific levels. For example, we can include a monster sprite that can chase the player through the maze. 
 
 
-
+<br>
 
 
 ## Gaming Hacks
@@ -55,7 +59,7 @@ file:///home/chronos/u-187f5e7304e68048d0e1b377184e52b47c75387f/MyFiles/Download
 
 
 
-
+<br>
 
 
 
