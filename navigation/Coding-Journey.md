@@ -7,15 +7,13 @@ permalink: /codingjourney/
 # This is my journey in coding:
 
 
-
-
+<br>
 
 
 ## Tools and Equipment Setup:
 
 
-
-
+<br>
 
 
 ### Here are some links to use in setting up your laptop in VS code.    
@@ -23,6 +21,7 @@ permalink: /codingjourney/
 - *https://github.com/nighthawkcoders/portfolio_2025, https://github.com/jm1021/john_2025: You can compare your repositories with these ones to see if you have anything missing, or you want to go to the next level with your hacks with innovative ideas.*
 
 
+<br>
 
 
 **Things to Keep in Mind**
@@ -30,15 +29,13 @@ permalink: /codingjourney/
 **If you want to go above and beyond with your work, you need to go to his office hours more often, and put more effort into this class.The more effort you put, when you show him for your hacks, he will boost your grade (0.9 --> 0.92).**
 
 
-
-
+<br>
 
 
 ## Gaming Intro:
 
 
-
-
+<br>
 
 
 ### Here are some of my game links:
