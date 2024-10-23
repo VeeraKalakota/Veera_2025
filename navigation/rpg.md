@@ -20,33 +20,33 @@ permalink: /rpg/
     const image = {src: image_src, data: image_data};
 
     // Turtle sprite data
-    const pokemon_src = "{{site.baseurl}}/images/rpg/pokemon.png";
-    const trainer_src = "{{site.baseurl}}/images/rpg/trainer.png"
-    const pokemon_data = {
-        SCALE_FACTOR: 8,
-        STEP_FACTOR: 1000,
-        ANIMATION_RATE: 100,
-        pixels: {height: 1470, width: 1421},
-        orientation: {rows: 4, columns: 4 },
-        down: {row: 0, start: 0, columns: 4 },
-        left: {row: 1, start: 0, columns: 4 },
-        right: {row: 2, start: 0, columns: 4 },
-        up: {row: 3, start: 0, columns: 4 },
-    };
-    const trainer_data = {
+    const turtle_src = "{{site.baseurl}}/images/rpg/turtle.png";
+    const fish_src = "{{site.baseurl}}/images/rpg/fishies.png"
+    const turtle_data = {
         SCALE_FACTOR: 10,
         STEP_FACTOR: 1000,
         ANIMATION_RATE: 100,
-        pixels: {height: 256, width: 256},
-        orientation: {rows: 4, columns: 4 },
-        down: {row: 0, start: 0, columns: 4 },
-        left: {row: 1, start: 0, columns: 4 },
-        right: {row: 2, start: 0, columns: 4 },
-        up: {row: 3, start: 0, columns: 4 },
+        pixels: {height: 280, width: 256},
+        orientation: {rows: 4, columns: 3 },
+        down: {row: 0, start: 0, columns: 3 },
+        left: {row: 1, start: 0, columns: 3 },
+        right: {row: 2, start: 0, columns: 3 },
+        up: {row: 3, start: 0, columns: 3 },
+    };
+    const fish_data = {
+        SCALE_FACTOR: 8,
+        STEP_FACTOR: 1000,
+        ANIMATION_RATE: 100,
+        pixels: {height: 256, width: 384},
+        orientation: {rows: 4, columns: 3 },
+        down: {row: 0, start: 0, columns: 3 },
+        left: {row: 1, start: 0, columns: 3 },
+        right: {row: 2, start: 0, columns: 3 },
+        up: {row: 3, start: 0, columns: 3 },
     };
 
-    const sprite = {src: pokemon_src, data: pokemon_data};
-    const sprite2 = {src: trainer_src, data: trainer_data};
+    const sprite = {src: turtle_src, data: turtle_data};
+    const sprite2 = {src: fish_src, data: fish_data};
 
     // Seaweed sprite data
     const seaweed_src = "{{site.baseurl}}/images/rpg/Seaweed.png";
