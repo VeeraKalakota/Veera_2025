@@ -13,9 +13,9 @@ permalink: /rpg/
     import GameControl from '{{site.baseurl}}/assets/js/rpg/GameControl.js';
 
     // Background data
-    const image_src = "{{site.baseurl}}/images/rpg/coral_reef.jpg";
+    const image_src = "{{site.baseurl}}/images/rpg/forest.jpg";
     const image_data = {
-        pixels: {height: 580, width: 1038}
+        pixels: {height: 129, width: 330}
     };
     const image = {src: image_src, data: image_data};
 
@@ -49,10 +49,10 @@ permalink: /rpg/
     const sprite2 = {src: fish_src, data: fish_data};
 
     // Seaweed sprite data
-    const seaweed_src = "{{site.baseurl}}/images/rpg/Seaweed.png";
+    const seaweed_src = "{{site.baseurl}}/images/berry.png";
     const seaweed_data = {
         SCALE_FACTOR: 10,    
-        pixels: { height: 66, width: 59 },
+        pixels: { height: 160, width: 160 },
     };
     const seaweed = { src: seaweed_src, data: seaweed_data };
 

@@ -116,7 +116,7 @@ const GameControl = {
         if (this.fish && this.fish.isColliding(this.player)) {
             this.score -= 1;
             if (this.score <= 0) {
-               this.endGame("Fish") 
+               this.endGame("Trainer") 
                return
             }
         }
@@ -125,7 +125,7 @@ const GameControl = {
         requestAnimationFrame(this.gameLoop.bind(this));
 
         if (this.score >= 5) {
-            this.endGame("Turtle");
+            this.endGame("Pokemon");
             return
         }
     },
