@@ -49,4 +49,4 @@ permalink: /codingjourney/
 
 ## Jupyter Notebooks
 
-### Here is the link for all 3 jupyter notebooks: 
+### Here is the link for all 3 jupyter notebooks: https://veerakalakota.github.io/Veera_2025/notebooks/
