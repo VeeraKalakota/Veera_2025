@@ -20,8 +20,8 @@ permalink: /rpg/
     const image = {src: image_src, data: image_data};
 
     // Turtle sprite data
-    const turtle_src = "{{site.baseurl}}/images/rpg/turtle.png";
-    const fish_src = "{{site.baseurl}}/images/rpg/fishies.png"
+    const turtle_src = "{{site.baseurl}}/images/rpg/pokemon.png";
+    const fish_src = "{{site.baseurl}}/images/rpg/trainer.png"
     const turtle_data = {
         SCALE_FACTOR: 10,
         STEP_FACTOR: 1000,
