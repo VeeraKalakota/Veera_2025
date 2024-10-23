@@ -38,7 +38,7 @@ const ANIMATION_RATE = 1; // 1/nth of the frame rate
  * @method handleKeyDown - Handles key down events to change the player's velocity.
  * @method handleKeyUp - Handles key up events to stop the player's velocity.
  */
-class Player {
+class Pokemon {
     /**
      * The constructor method is called when a new Player object is created.
      * 

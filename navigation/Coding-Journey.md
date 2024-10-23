@@ -42,3 +42,13 @@ permalink: /codingjourney/
 - My Turtle Game: https://veerakalakota.github.io/Veera_2025/rpg/
 - Team Game: https://whitelunarium.github.io/RPG-Game/
 - Original Game: https://nighthawkcoders.github.io/portfolio_2025/rpg/latest
+
+
+<br>
+
+
+## Jupyter Notebooks
+
+- **Variables: Input and Output:** 
+- **Data Types and Operations:**
+- **For Loops and Sprites:**
