@@ -13,7 +13,7 @@ permalink: /rpg/
     import GameControl from '{{site.baseurl}}/assets/js/rpg/GameControl.js';
 
     // Background data
-    const image_src = "{{site.baseurl}}/images/forest.jpg";
+    const image_src = "{{site.baseurl}}/images/forest.png";
     const image_data = {
         pixels: {height: 129, width: 330}
     };
