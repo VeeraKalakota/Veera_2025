@@ -21,28 +21,28 @@ permalink: /rpg/
 
     // Turtle sprite data
     const turtle_src = "{{site.baseurl}}/images/pokemon.png";
-    const fish_src = "{{site.baseurl}}/images/trainer.png";
+    const fish_src = "{{site.baseurl}}/images/trainer.png";.
     const turtle_data = {
-        SCALE_FACTOR: 10,
+        SCALE_FACTOR: 8,
         STEP_FACTOR: 1000,
         ANIMATION_RATE: 100,
-        pixels: {height: 280, width: 256},
-        orientation: {rows: 4, columns: 3 },
-        down: {row: 0, start: 0, columns: 3 },
-        left: {row: 1, start: 0, columns: 3 },
-        right: {row: 2, start: 0, columns: 3 },
-        up: {row: 3, start: 0, columns: 3 },
+        pixels: {height: 1470, width: 1421},
+        orientation: {rows: 4, columns: 4 },
+        down: {row: 0, start: 0, columns: 4 },
+        left: {row: 1, start: 0, columns: 4 },
+        right: {row: 2, start: 0, columns: 4 },
+        up: {row: 3, start: 0, columns: 4 },
     };
     const fish_data = {
         SCALE_FACTOR: 8,
         STEP_FACTOR: 1000,
         ANIMATION_RATE: 100,
-        pixels: {height: 256, width: 384},
-        orientation: {rows: 4, columns: 3 },
-        down: {row: 0, start: 0, columns: 3 },
-        left: {row: 1, start: 0, columns: 3 },
-        right: {row: 2, start: 0, columns: 3 },
-        up: {row: 3, start: 0, columns: 3 },
+        pixels: {height: 256, width: 256},
+        orientation: {rows: 4, columns: 4 },
+        down: {row: 0, start: 0, columns: 4 },
+        left: {row: 1, start: 0, columns: 4 },
+        right: {row: 2, start: 0, columns: 4 },
+        up: {row: 3, start: 0, columns: 4 },
     };
 
     const sprite = {src: turtle_src, data: turtle_data};
