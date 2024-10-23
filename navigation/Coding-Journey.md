@@ -49,6 +49,4 @@ permalink: /codingjourney/
 
 ## Jupyter Notebooks
 
-- **Variables: Input and Output:** 
-- **Data Types and Operations:**
-- **For Loops and Sprites:**
+### Here is the link for all 3 jupyter notebooks: 
