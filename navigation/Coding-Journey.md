@@ -49,4 +49,19 @@ permalink: /codingjourney/
 
 ## Jupyter Notebooks
 
-### Here is the link for all 3 jupyter notebooks: https://veerakalakota.github.io/Veera_2025/notebooks/
+### Here is the link for all 3 jupyter notebooks:
+<div>
+    <a href = "{{site.baseurl}}/csse/javascript/fundamentals/variables">
+        <p> Variables </p>
+    </a>
+</div>
+<div>
+    <a href ="{{site.baseurl}}/csse/javascript/fundamentals/for-loops/">
+        <p> For loops</p>
+    </a>
+</div>
+<div>
+    <a href = "{{site.baseurl}}/csse/javascript/fundamentals/data-types/">
+        <p> Data Types & Operations </p>
+    </a>
+</div>
