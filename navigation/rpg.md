@@ -35,7 +35,7 @@ permalink: /rpg/
     };
     const fish_data = {
         SCALE_FACTOR: 8,
-        STEP_FACTOR: 1000,
+        STEP_FACTOR: 750,
         ANIMATION_RATE: 100,
         pixels: {height: 256, width: 256},
         orientation: {rows: 4, columns: 4 },
