@@ -24,7 +24,7 @@ permalink: /rpg/
     const fish_src = "{{site.baseurl}}/images/trainer.png";
     const turtle_data = {
         SCALE_FACTOR: 8,
-        STEP_FACTOR: 1500,
+        STEP_FACTOR: 500,
         ANIMATION_RATE: 100,
         pixels: {height: 1470, width: 1421},
         orientation: {rows: 4, columns: 4 },
