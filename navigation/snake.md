@@ -2,7 +2,7 @@
 layout: base 
 title: Snake
 search_exclude: true
-permalink: /snake
+permalink: /snake/
 ---
 
 {% include nav/home.html %}

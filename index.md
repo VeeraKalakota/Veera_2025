@@ -198,37 +198,83 @@ float: right;
 
 </script>
 
-Hello World! 
+# Home
+This blog contains my journey into Coding.
 
-New Kasm Test
+<div style="display: flex; flex-wrap: wrap; gap: 10px;">
+    <a href="{{site.baseurl}}/home" style="text-decoration: none;">
+        <div class="button" style="background-color: #007bff; color: white; padding: 10px 20px; border-radius: 5px; font-weight: bold; transition: transform 0.3s;">
+            Student Home
+        </div>
+    </a>
 
-My journey starts here.
+    <a href="{{site.baseurl}}/about" style="text-decoration: none;">
+        <div class="button" style="background-color: #28a745; color: white; padding: 10px 20px; border-radius: 5px; font-weight: bold; transition: transform 0.3s;">
+            About Me
+        </div>
+    </a>
 
-By Veera Kalakota
-### Markdown Samples [ [markdown cheatsheet] ](https://www.markdownguide.org/getting-started/)
-Using Markdown from index.md  We are learning markdown.
+    <a href="{{site.baseurl}}/codingjourney" style="text-decoration: none;">
+        <div class="button" style="background-color: #dc3545; color: white; padding: 10px 20px; border-radius: 5px; font-weight: bold; transition: transform 0.3s;">
+            Coding
+        </div>
+    </a>
 
--This text below is something called Markdown. This is a heading, inside of code scaffolding
 
-```markdown
-## Investing in Your Technical Future XXXYYY
-```
--This is emphasis
+</div>
 
-```markdown
-> Explore the Computer Science Pathway at Del Norte High School and invest in your technical skills. All Del Norte CompSci classes are designed to provide a real-world development experience. Class time includes tech talks (lectures), peer collaboration, communication with teachers, critical thinking while coding, and creativity in projects. Grading is focused on time invested, participation with peers, and engagement in learning.
-```
--Sample of bullets
+## Game Progress
+> Here is my progress through game coding, click to see these online
 
-```markdown
-- Introduction to concepts and requirements by the teacher
-- Project-based learning with teacher support, performing Agile/Scrum development
-- Coding, frontend, backend, devops, version control and algorithmic thinking
-- Creativity, research, design, data structures, and utilizing ChatGPT
-- Performing team work, team communication and collaboration, peer reviews/grading
-- Focus on tehnical communications through project presentations and student led teaching
-- Grades are on projects, learnt concepts, and live reviews between student(s) and teacher
-```
+<div style="display: flex; flex-wrap: wrap; gap: 10px;">
+    <a href="{{site.baseurl}}/rpg" style="text-decoration: none;">
+        <div class="button" style="background-color: #8e44ad; color: white; padding: 10px 20px; border-radius: 5px; font-weight: bold; transition: transform 0.3s;">
+            RPG
+        </div>
+    </a>
+
+    <a href="{{site.baseurl}}/snake" style="text-decoration: none;">
+        <div class="button" style="background-color: #2ecc71; color: white; padding: 10px 20px; border-radius: 5px; font-weight: bold; transition: transform 0.3s;">
+            Snake
+        </div>
+    </a>
+</div>
+
+<div style="display: flex; flex-wrap: wrap; gap: 10px;">
+    <a href="https://nighthawkcoders.github.io/portfolio_2025/rpg/latest" style="text-decoration: none;">
+        <div class="button" style="background-color: #f1c40f; color: white; padding: 10px 20px; border-radius: 5px; font-weight: bold; transition: transform 0.3s;">
+            RPG Latest
+        </div>
+    </a>
+
+## Jupyter Notebooks
+> Here is my preparation for my Sprint objectives, click to review all hacks
+
+<div style="display: flex; flex-wrap: wrap; gap: 10px;">
+    <a href="https://github.com/VeeraKalakota/Veera_2025/tree/main/_notebooks/Foundation/Sprint1" style="text-decoration: none;">
+        <div class="button" style="background-color: #f1c40f; color: white; padding: 10px 20px; border-radius: 5px; font-weight: bold; transition: transform 0.3s;">
+            Sprint 1
+        </div>
+    </a>
+
+    <a href="https://github.com/VeeraKalakota/Veera_2025/tree/main/_notebooks/Foundation/Sprint2" style="text-decoration: none;">
+        <div class="button" style="background-color: #d35400; color: white; padding: 10px 20px; border-radius: 5px; font-weight: bold; transition: transform 0.3s;">
+            Sprint 2
+        </div>
+    </a>
+</div>
+
+<style>
+  /* Apply hover effect on the button to scale it */
+  .button:hover {
+    transform: scale(1.2); /* Increase size by 20% */
+  }
+
+  /* Ensure buttons in the Home section are aligned side by side */
+  .button {
+    display: inline-block; /* Make the buttons inline elements */
+  }
+</style>
 
 <!-- from https://github.com/utterance/utterances -->
 <script src="https://utteranc.es/client.js"
