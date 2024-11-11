@@ -79,6 +79,7 @@ const GameControl = {
         ctx.fillText(`Game Over! ${winner} Wins! Press "R" to restart. Press "shift" for settings.`, 10, 70);
         
         const restartGame = (event) => {
+            console.log("Settings!!")
             if (event.code === 'KeyR') { // Use 'KeyR' instead of '82'
                 window.removeEventListener("keypress", restartGame); // Remove the listener
                 this.start(this.assets);
@@ -86,7 +87,6 @@ const GameControl = {
             if (event.code === 'ShiftLeft') { // This uses the left shift key to access the settings
                 this.gameSettings() 
             }
-            console.log("Settings!!")
         };
 
         window.addEventListener("keypress", restartGame);
