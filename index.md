@@ -238,14 +238,14 @@ This blog contains my journey into Coding.
             Snake
         </div>
     </a>
-</div>
 
-<div style="display: flex; flex-wrap: wrap; gap: 10px;">
     <a href="https://nighthawkcoders.github.io/portfolio_2025/rpg/latest" style="text-decoration: none;">
         <div class="button" style="background-color: #f1c40f; color: white; padding: 10px 20px; border-radius: 5px; font-weight: bold; transition: transform 0.3s;">
             RPG Latest
         </div>
     </a>
+</div>
+
 
 ## Jupyter Notebooks
 > Here is my preparation for my Sprint objectives, click to review all hacks
