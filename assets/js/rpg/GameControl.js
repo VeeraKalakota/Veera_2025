@@ -83,7 +83,7 @@ const GameControl = {
                 window.removeEventListener("keypress", restartGame); // Remove the listener
                 this.start(this.assets);
             }
-            if (event.code === 'Shift') { // This uses the left shift key to access the settings
+            if (event.code === 'ShiftLeft') { // This uses the left shift key to access the settings
                 this.gameSettings() 
             }
         };
