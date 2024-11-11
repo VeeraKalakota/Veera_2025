@@ -85,12 +85,13 @@ const GameControl = {
             }
             if (event.code === 'ShiftLeft') { // This uses the left shift key to access the settings
                 this.gameSettings() 
-                console.log("Settings!!")
             }
+            console.log("Settings!!")
         };
-    
+
         window.addEventListener("keypress", restartGame);
     },
+    
     
 
 
