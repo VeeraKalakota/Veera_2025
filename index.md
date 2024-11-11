@@ -220,8 +220,9 @@ This blog contains my journey into Coding.
         </div>
     </a>
 
-
 </div>
+
+<br>
 
 ## Game Progress
 > Here is my progress through game coding, click to see these online
@@ -246,6 +247,7 @@ This blog contains my journey into Coding.
     </a>
 </div>
 
+<br>
 
 ## Jupyter Notebooks
 > Here is my preparation for my Sprint objectives, click to review all hacks
