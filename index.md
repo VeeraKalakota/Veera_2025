@@ -264,6 +264,12 @@ This blog contains my journey into Coding.
             Sprint 2
         </div>
     </a>
+
+    <a href="https://github.com/VeeraKalakota/Veera_2025/tree/main/_notebooks/Foundation/Sprint3" style="text-decoration: none;">
+        <div class="button" style="background-color: #38a0b5; color: white; padding: 10px 20px; border-radius: 5px; font-weight: bold; transition: transform 0.3s;">
+            Sprint 3
+        </div>
+    </a>
 </div>
 
 <style>
