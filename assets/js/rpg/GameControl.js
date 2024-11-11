@@ -65,27 +65,26 @@ const GameControl = {
         this.gameLoop();
     },
 
-
-/*     initKeyListeners: function() {
-        window.addEventListener("keydown", (event) => {
-            if (event.code === "Escape" && !this.isQuestionActive) {
-                this.isQuestionActive = true; // Prevent further inputs
-                displayQuestionAnswers(qaArray); 
-            }
-        });
-    }, */
+    gameSettings: function () { 
+        let setting = document.getElementById('setting')
+        setting.style.display = 'block'
+    },
+    
     
     endGame: function (winner) {
         GameEnv.clear();
         const ctx = GameEnv.ctx;
         ctx.fillStyle = 'white';
-        ctx.font = '50px Arial';
-        ctx.fillText(`Game Over! ${winner} Wins! Press "R" to restart the Game`, 10, 70);
+        ctx.font = '35px Arial';
+        ctx.fillText(`Game Over! ${winner} Wins! Press "R" to restart. Press "shift" for settings.`, 10, 70);
         
         const restartGame = (event) => {
             if (event.code === 'KeyR') { // Use 'KeyR' instead of '82'
                 window.removeEventListener("keypress", restartGame); // Remove the listener
                 this.start(this.assets);
+            }
+            if (event.code === 'Shift') { // This uses the left shift key to access the settings
+                this.gameSettings() 
             }
         };
     
@@ -110,7 +109,6 @@ const GameControl = {
             //this.isQuestionActive = true; // Set flag to true
             //displayQuestionAnswers(qaArray); 
         } 
-    
 
 
         if (this.fish && this.fish.isColliding(this.player)) {
@@ -128,6 +126,8 @@ const GameControl = {
             this.endGame("Pokemon");
             return
         }
+
+
     },
 
 /*     // New method to reset the question state

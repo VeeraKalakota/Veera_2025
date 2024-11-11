@@ -6,8 +6,25 @@ permalink: /rpg/
 
 <canvas id='gameCanvas'></canvas>
 
-<!-- <div id="questionAnswers" style="padding: 20px; background-color: #f9f9f9: border: 1px solid #ccc; margin-top: 20px;">
-</div> -->
+<div id="setting" class="py-4 text-light" style="display: none;">
+            <br>
+            <!-- <p>Game Speed:
+                <input id="speed1" type="radio" name="speed" value="120" checked="">
+                <label for="speed1">Slow</label>
+                <input id="speed2" type="radio" name="speed" value="75">
+                <label for="speed2">Normal</label>
+                <input id="speed3" type="radio" name="speed" value="35">
+                <label for="speed3">Fast</label>
+            </p> -->
+            <p>Difficulty:
+                <input id="easyDiff" type="radio" name="difficulty" value="easy" checked="">
+                <label for="easyDiff">Easy</label>
+                <input id="mediumDiff" type="radio" name="difficulty" value="medium">
+                <label for="mediumDiff">Medium</label>
+                <input id="hardDiff" type="radio" name="difficulty" value="hard">
+                <label for="hardDiff">Hard</label>
+            </p>
+</div>
 
 <script type="module">
     import GameControl from '{{site.baseurl}}/assets/js/rpg/GameControl.js';
