@@ -43,11 +43,8 @@ const GameControl = {
     gameSettings: function () { 
         let setting = document.getElementById('setting')
         setting.style.display = 'block'
-        document.getElementById('settingForm').addEventListener('change',(event) => {
-            if (event.target.name === "difficulty") {
-                let difficult = event.target.value
-                this.updateScoreFactor(difficult)
-            }
+        window.addEventListener('keypress',(event) => {
+           this.updateScoreFactor(event.code)
         })
     },
     
@@ -73,13 +70,13 @@ const GameControl = {
     },
     
     updateScoreFactor (difficulty) {
-        if (difficulty === 'easy') {
+        if (difficulty === 'KeyE') {
             this.scoreFactor = 5;
             this.assets.seaweed.data.SCALE_FACTOR = 10;
-        } else if (difficulty === 'medium') {
+        } else if (difficulty === 'KeyM') {
             this.scoreFactor = 7;
             this.assets.seaweed.data.SCALE_FACTOR = 10;
-        } else {
+        } else if (difficulty === "KeyH"){
             this.scoreFactor = 7
             this.assets.seaweed.data.SCALE_FACTOR = 7;
         }

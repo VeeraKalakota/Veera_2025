@@ -9,14 +9,10 @@ permalink: /rpg/
 <div id="setting" class="py-4 text-light" style="display: none;">
             <br>
             <form id="settingForm">
-            <p>Difficulty:
-                <input id="easyDiff" type="radio" name="difficulty" value="easy" checked="">
-                <label for="easyDiff">Easy</label>
-                <input id="mediumDiff" type="radio" name="difficulty" value="medium">
-                <label for="mediumDiff">Medium</label>
-                <input id="hardDiff" type="radio" name="difficulty" value="hard">
-                <label for="hardDiff">Hard</label>
-            </p>
+            <h3>Select Difficulty:</h3>
+            <p>Press "e" for easy</p>
+            <p>Press "m" for medium</p>
+            <p>Press "h" for hard</p>
             </form>
 </div>
 
