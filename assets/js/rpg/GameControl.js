@@ -75,10 +75,10 @@ const GameControl = {
             this.assets.seaweed.data.SCALE_FACTOR = 10;
         } else if (difficulty === 'KeyM') {
             this.scoreFactor = 7;
-            this.assets.seaweed.data.SCALE_FACTOR = 10;
-        } else if (difficulty === "KeyH"){
-            this.scoreFactor = 7
             this.assets.seaweed.data.SCALE_FACTOR = 7;
+        } else if (difficulty === "KeyH"){
+            this.scoreFactor = 10
+            this.assets.seaweed.data.SCALE_FACTOR = 5;
         }
     },
 
