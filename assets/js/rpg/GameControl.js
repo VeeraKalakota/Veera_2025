@@ -4,31 +4,7 @@ import Player from './Player.js';
 import Pickup from './Pickup.js'; // Import the new class
 import Fish from './Fish.js';
 
-/* const qaArray = [
-    ["Sea-Life", [
-        { question: "True or false: JavaScript is an OOP Programing language", answer:"True"},
-        { question: "True or false: Turtles can only survive in the ocean", answer:"False"},
-        { question: "True or false: This game is the best game ever", answer:"True"}
-    ]],
-];
 
-function displayQuestionAnswers(qaArray) {
-    const questionAnswersDiv = document.getElementById('questionAnswers');
-    questionAnswersDiv.innerHTML = "";
-
-    for (let category of qaArray) {
-        const h2 = document.createElement('h2');
-        h2.innerHTML = category[0];
-        questionAnswersDiv.appendChild(h2);
-
-        for (let qa of category[1]) {
-            const p = document.createElement('p');
-            p.innerHTML = `<strong>Q:<strong/> ${qa.question} <br> <strong>A:</strong> ${qa.answer}`;
-            questionAnswersDiv.appendChild(p);
-        }
-    }
-
-} */
 /**
  * The GameControl object manages the game.
  * 
@@ -49,8 +25,7 @@ const GameControl = {
     pickup: null, 
     score: 0, // Initialize score to zero
     assets: null,
-    isQuestionActive: false, // New flag to manage the state of the game
-
+    scoreFactor: 5,
 
     start: function(assets = {}) {
         GameEnv.create(); // Call the static method to set up the game environment
@@ -68,6 +43,12 @@ const GameControl = {
     gameSettings: function () { 
         let setting = document.getElementById('setting')
         setting.style.display = 'block'
+        document.getElementById('settingForm').addEventListener('change',(event) => {
+            if (event.target.name === "difficulty") {
+                let difficult = event.target.value
+                this.updateScoreFactor(difficult)
+            }
+        })
     },
     
     
@@ -79,7 +60,6 @@ const GameControl = {
         ctx.fillText(`Game Over! ${winner} Wins! Press "R" to restart. Press "P" for settings.`, 10, 70);
         
         const restartGame = (event) => {
-            console.log("Settings!!")
             if (event.code === 'KeyR') { // Use 'KeyR' instead of '82'
                 window.removeEventListener("keypress", restartGame); // Remove the listener
                 this.start(this.assets);
@@ -92,7 +72,18 @@ const GameControl = {
         window.addEventListener("keypress", restartGame);
     },
     
-    
+    updateScoreFactor (difficulty) {
+        if (difficulty === 'easy') {
+            this.scoreFactor = 5;
+            this.assets.seaweed.data.SCALE_FACTOR = 10;
+        } else if (difficulty === 'medium') {
+            this.scoreFactor = 7;
+            this.assets.seaweed.data.SCALE_FACTOR = 10;
+        } else {
+            this.scoreFactor = 7
+            this.assets.seaweed.data.SCALE_FACTOR = 7;
+        }
+    },
 
 
     gameLoop: function() {
@@ -105,11 +96,10 @@ const GameControl = {
         }
 
         // Check if the pickup is collected
-        if (this.pickup && this.pickup.isColliding(this.player) && !this.isQuestionActive) {
+        if (this.pickup && this.pickup.isColliding(this.player)) {
             this.score += 1;
             this.pickup.resetPosition(); // Remove the pickup by reseting position
-            //this.isQuestionActive = true; // Set flag to true
-            //displayQuestionAnswers(qaArray); 
+
         } 
 
 
@@ -124,7 +114,7 @@ const GameControl = {
         this.drawScore();
         requestAnimationFrame(this.gameLoop.bind(this));
 
-        if (this.score >= 5) {
+        if (this.score >= this.scoreFactor) {
             this.endGame("Pokemon");
             return
         }
@@ -132,11 +122,6 @@ const GameControl = {
 
     },
 
-/*     // New method to reset the question state
-    resetQuestionState: function() {
-        this.isQuestionActive = false;
-        document.getElementById('questionAnswers').innerHTML = ""; // Clear the display if needed
-    }, */
 
     drawScore: function() {
         const ctx = GameEnv.ctx

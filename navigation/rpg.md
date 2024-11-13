@@ -8,14 +8,7 @@ permalink: /rpg/
 
 <div id="setting" class="py-4 text-light" style="display: none;">
             <br>
-            <!-- <p>Game Speed:
-                <input id="speed1" type="radio" name="speed" value="120" checked="">
-                <label for="speed1">Slow</label>
-                <input id="speed2" type="radio" name="speed" value="75">
-                <label for="speed2">Normal</label>
-                <input id="speed3" type="radio" name="speed" value="35">
-                <label for="speed3">Fast</label>
-            </p> -->
+            <form id="settingForm">
             <p>Difficulty:
                 <input id="easyDiff" type="radio" name="difficulty" value="easy" checked="">
                 <label for="easyDiff">Easy</label>
@@ -24,6 +17,7 @@ permalink: /rpg/
                 <input id="hardDiff" type="radio" name="difficulty" value="hard">
                 <label for="hardDiff">Hard</label>
             </p>
+            </form>
 </div>
 
 <script type="module">
