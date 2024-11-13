@@ -233,16 +233,19 @@ This blog contains my journey into Coding.
             RPG
         </div>
     </a>
-
     <a href="{{site.baseurl}}/snake" style="text-decoration: none;">
         <div class="button" style="background-color: #2ecc71; color: white; padding: 10px 20px; border-radius: 5px; font-weight: bold; transition: transform 0.3s;">
             Snake
         </div>
     </a>
-
     <a href="https://nighthawkcoders.github.io/portfolio_2025/rpg/latest" style="text-decoration: none;">
         <div class="button" style="background-color: #f1c40f; color: white; padding: 10px 20px; border-radius: 5px; font-weight: bold; transition: transform 0.3s;">
             RPG Latest
+        </div>
+    </a>
+    <a href="{{site.baseurl}}/tictactoe" style="text-decoration: none;">
+        <div class="button" style="background-color: #f1c40f; color: white; padding: 10px 20px; border-radius: 5px; font-weight: bold; transition: transform 0.3s;">
+            Tic-Tac-Toe
         </div>
     </a>
 </div>
@@ -258,13 +261,11 @@ This blog contains my journey into Coding.
             Sprint 1
         </div>
     </a>
-
     <a href="https://github.com/VeeraKalakota/Veera_2025/tree/main/_notebooks/Foundation/Sprint2" style="text-decoration: none;">
         <div class="button" style="background-color: #d35400; color: white; padding: 10px 20px; border-radius: 5px; font-weight: bold; transition: transform 0.3s;">
             Sprint 2
         </div>
     </a>
-
     <a href="https://github.com/VeeraKalakota/Veera_2025/tree/main/_notebooks/Foundation/Sprint3" style="text-decoration: none;">
         <div class="button" style="background-color: #38a0b5; color: white; padding: 10px 20px; border-radius: 5px; font-weight: bold; transition: transform 0.3s;">
             Sprint 3
