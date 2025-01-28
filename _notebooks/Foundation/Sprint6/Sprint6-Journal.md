@@ -1,7 +1,7 @@
 ---
 layout: base
 title: Sprint 6 Coding Journal
-description: My journal entries for Sprint6
+description: My journal entries for Sprint 6
 author: Veera
 hide: true
 ---
@@ -18,3 +18,12 @@ This week, we accomplished 3 things:
 
 
 Next week, we wanted to clean up the level, and create additional bonuses for collecting all of the coins, or defeating all of the enemies. 
+
+### Week 19 Journal Entry: 1/25/2025
+
+This week, since our scrummaster was absent, we had some issues with our code. 
+
+However, this week was dedicated to fine-tuning the locations of the sprites (which Ethan destroyed), and I decided to create some
+bonuses in the level. If the player collected all of the pieces of trash around the map, and put them in the trash can, the player 
+will recieve a size bonus or a coin multiplier (still deciding). Ethan will be responsible for the sprites and their respective positions. 
+Cason will provide pseudo code for each file involved. I will use his code and edit it to meet our needs.
