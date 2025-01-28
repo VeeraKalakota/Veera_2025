@@ -23,7 +23,9 @@ Next week, we wanted to clean up the level, and create additional bonuses for co
 
 This week, since our scrummaster was absent, we had some issues with our code. 
 
-However, this week was dedicated to fine-tuning the locations of the sprites (which Ethan destroyed), and I decided to create some
-bonuses in the level. If the player collected all of the pieces of trash around the map, and put them in the trash can, the player 
+However, this week was dedicated to fine-tuning the locations of the sprites (which Ethan crushed), and I decided to create some
+bonuses in the level. (Ethan also remodeled the level to make the player even more mobile and allow for more enemies)
+
+If the player collected all of the pieces of trash around the map, and put them in the trash can, the player 
 will recieve a size bonus or a coin multiplier (still deciding). Ethan will be responsible for the sprites and their respective positions. 
 Cason will provide pseudo code for each file involved. I will use his code and edit it to meet our needs.
