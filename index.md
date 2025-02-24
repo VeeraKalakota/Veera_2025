@@ -276,7 +276,7 @@ This blog contains my journey into Coding.
             Sprint 4
         </div>
     </a>
-        <a href="https://github.com/VeeraKalakota/Veera_2025/tree/main/_notebooks/Foundation/Sprint6/CSSE2-Journal.md" style="text-decoration: none;">
+        <a href="https://github.com/VeeraKalakota/Veera_2025/tree/main/N@tM-FinalBlogs/CSSE2/CSSE2-Journal.md" style="text-decoration: none;">
         <div class="button" style="background-color:rgb(21, 113, 139); color: white; padding: 10px 20px; border-radius: 5px; font-weight: bold; transition: transform 0.3s;">
             Sprint 6
         </div>
