@@ -46,9 +46,9 @@ more mobility throughout the map.
 
 ### Week 22 (Ski Week): 2/22/2025
 
-This week, I was debugging Cason's code to make sure that his logic was running
-smoothly. I was able to debug his ending, and made sure that the player could 
-leave the level if and only if they collected the flag and they were on top of the island. 
+This week, I was debugging Cason's code to make sure that his logic was running smoothly. I was able to debug his ending, and made sure 
+that the player could leave the level if and only if they collected the flag and they were on top of the island. This week, before
+Night at the Museum, I really want to dig into the fine details of the game (block placement, best mobility of player, etc.)
 
 ***Before***
 ![](image.png)
