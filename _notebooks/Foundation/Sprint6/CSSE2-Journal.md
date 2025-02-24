@@ -51,7 +51,7 @@ that the player could leave the level if and only if they collected the flag and
 Night at the Museum, I really want to dig into the fine details of the game (block placement, best mobility of player, etc.)
 
 ***Before***
-![](image.png)
+![](greece1.png)
 
 ***After***
-![](image.png)
+![](greece2.png)
