@@ -27,3 +27,5 @@ header_pages:
   - navigation/CSSE.md
   - navigation/rpg.md
   - navigation/Mario.md
+exclude:
+  - venv/
