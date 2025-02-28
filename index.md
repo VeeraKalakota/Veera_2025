@@ -283,28 +283,6 @@ This blog contains my journey into Coding.
     </a>
 </div>
 
-## Final blogs
-> Here are all my blogs needed for the final, click on each one to review
-
-<div style="display: flex; flex-wrap: wrap; gap: 10px;">
-    </a>
-        <a href="https://github.com/VeeraKalakota/Veera_2025/tree/main/N@tM-FinalBlogs/CSSE1/ControlStructures.ipynb" style="text-decoration: none ">
-        <div class="button" style="background-color:rgb(21, 113, 139); color: white; padding: 10px 20px; border-radius: 5px; font-weight: bold; transition: transform 0.3s;">
-            Control Structures
-        </div>
-    </a>
-    <a href="https://github.com/VeeraKalakota/Veera_2025/tree/main/N@tM-FinalBlogs/CSSE1/DataTypes.ipynb" style="text-decoration: none ">
-        <div class="button" style="background-color:rgb(21, 113, 139); color: white; padding: 10px 20px; border-radius: 5px; font-weight: bold; transition: transform 0.3s;">
-            Data Types
-        </div>
-    </a>
-    <a href="https://github.com/VeeraKalakota/Veera_2025/tree/main/N@tM-FinalBlogs/CSSE1/Operators.ipynb" style="text-decoration: none ">
-        <div class="button" style="background-color:rgb(21, 113, 139); color: white; padding: 10px 20px; border-radius: 5px; font-weight: bold; transition: transform 0.3s;">
-            Operators 
-        </div>
-    </a>
-</div>
-
 <style>
   /* Apply hover effect on the button to scale it */
   .button:hover {
