@@ -29,3 +29,4 @@ header_pages:
   - navigation/Mario.md
 exclude:
   - venv/
+  - vendor/
